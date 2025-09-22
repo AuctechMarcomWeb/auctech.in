@@ -694,43 +694,43 @@
                         <div class="swiper-slide">
                             <a href="#">
                                 <span class="tf-overlay"></span>
-                                <img class="img1" src="https://www.auctech.in/assets/img/client/5.jpg" alt="">
-                                <img class="img2" src="https://www.auctech.in/assets/img/client/5.jpg" alt="">
+                                <img class="img1" src="https://www.auctech.in/images/partner/1.jpg" alt="">
+                                <img class="img2" src="https://www.auctech.in/images/partner/1.jpg" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#">
                                 <span class="tf-overlay"></span>
-                                <img class="img1" src="https://www.auctech.in/assets/img/client/6.jpg" alt="">
-                                <img class="img2" src="https://www.auctech.in/assets/img/client/6.jpg" alt="">
+                                <img class="img1" src="https://www.auctech.in/images/partner/2.jpg" alt="">
+                                <img class="img2" src="https://www.auctech.in/images/partner/2.jpg" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#">
                                 <span class="tf-overlay"></span>
-                                <img class="img1" src="https://www.auctech.in/assets/img/client/1.jpg" alt="">
-                                <img class="img2" src="https://www.auctech.in/assets/img/client/1.jpg" alt="">
+                                <img class="img1" src="https://www.auctech.in/images/partner/3.jpg" alt="">
+                                <img class="img2" src="https://www.auctech.in/images/partner/3.jpg" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#">
                                 <span class="tf-overlay"></span>
-                                <img class="img1" src="https://www.auctech.in/assets/img/client/2.jpg" alt="">
-                                <img class="img2" src="https://www.auctech.in/assets/img/client/2.jpg" alt="">
+                                <img class="img1" src="https://www.auctech.in/images/partner/4.jpg" alt="">
+                                <img class="img2" src="https://www.auctech.in/images/partner/4.jpg" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#">
                                 <span class="tf-overlay"></span>
-                                <img class="img1" src="https://www.auctech.in/assets/img/client/3.jpg" alt="">
-                                <img class="img2" src="https://www.auctech.in/assets/img/client/3.jpg" alt="">
+                                <img class="img1" src="https://www.auctech.in/images/partner/5.jpg" alt="">
+                                <img class="img2" src="https://www.auctech.in/images/partner/5.jpg" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#">
                                 <span class="tf-overlay"></span>
-                                <img class="img1" src="https://www.auctech.in/assets/img/client/4.jpg" alt="">
-                                <img class="img2" src="https://www.auctech.in/assets/img/client/4.jpg" alt="">
+                                <img class="img1" src="https://www.auctech.in/images/partner/6.jpg" alt="">
+                                <img class="img2" src="https://www.auctech.in/images/partner/6.jpg" alt="">
                             </a>
                         </div>
                     </div>
