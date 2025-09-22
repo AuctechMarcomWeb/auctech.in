@@ -228,7 +228,7 @@
                                 </a>
                             </li>
                             <li class="item ">
-                                <a href="https://www.auctech.in/portfolio">
+                                <a href="https://www.auctech.in/portfolio" target="_blank">
                                     <span>
 
                                         Inventions
@@ -324,15 +324,15 @@
                                     <a class="item-menu-mobile" href="partner"> Partners</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a class="item-menu-mobile" href="https://auctechmarketing.com/"> Marketing</a>
+                                    <a class="item-menu-mobile" href="https://auctechmarketing.com/" target="_blank"> Marketing</a>
                                 </li>
 
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a class="item-menu-mobile" href="https://www.auctech.in/portfolio">Inventions
+                                    <a class="item-menu-mobile" href="https://www.auctech.in/portfolio" target="_blank">Inventions
                                     </a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a class="item-menu-mobile" href="javascript:void(0)">Whitepapers
+                                    <a class="item-menu-mobile" href="career)">Career
                                     </a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
