@@ -40,10 +40,6 @@ $total_con = $con->query("SELECT COUNT(*) AS total FROM contact")->fetch_assoc()
                     </div>
                 </a>
             </div>
-           
-           
-            
-
             <div class="col-lg-4 col-md-6">
                 <a href="querylist.php">
                     <div class="ibox bg-warning color-white widget-stat">
