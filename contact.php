@@ -187,8 +187,8 @@
             font-weight: 600;
         }
 
-        .contact-info p,
-        .contact-info a {
+        .contact-info p
+        {
             margin-bottom: 10px;
             font-size: 16px;
             color: #333;
@@ -203,6 +203,9 @@
         @media (max-width: 768px) {
             .contact-container {
                 flex-direction: column;
+                padding: 10px;
+                gap: 20px;
+    
             }
 
             .contact-form,
@@ -224,9 +227,10 @@
             position: relative;
             overflow: hidden;
             border-radius: 16px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 2rem;
+           
+           
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            margin-top: 16px;
         }
 
         .floating-shapes {
@@ -299,7 +303,7 @@
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
             gap: 1rem;
             position: relative;
             z-index: 2;
@@ -307,7 +311,7 @@
         }
 
         .contact-card {
-            background: rgba(255, 255, 255, 0.15);
+           background: linear-gradient(45deg, #b93e76, #f49e33);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 12px;
@@ -340,10 +344,11 @@
         }
 
         .department-name {
-            font-size: 1.1rem;
+            /* font-size: 1.1rem; */
+            font-size:16px;
             font-weight: 600;
             color: white;
-            margin-bottom: 0.8rem;
+            margin-bottom: 1.2rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -380,7 +385,7 @@
         .phone-icon {
             width: 18px;
             height: 18px;
-            background: linear-gradient(45deg, #4facfe, #00f2fe);
+            /* background: linear-gradient(45deg, #4facfe, #00f2fe); */
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -394,7 +399,7 @@
             color: white;
             text-decoration: none;
             font-weight: 500;
-            font-size: 1rem;
+            font-size: 13px;
             letter-spacing: 0.3px;
         }
 
@@ -439,11 +444,11 @@
             }
             
             .department-name {
-                font-size: 1rem;
+                font-size: 1.6rem;
             }
             
             .contact-link {
-                font-size: 0.9rem;
+                font-size: 1.4rem;
             }
         }
     </style>
@@ -608,67 +613,67 @@
                             <div class="contact-grid">
                                 <div class="contact-card">
                                     <div class="department-name">
-                                        <div class="department-icon">📞</div>
+                                        
                                         Customer Support
                                     </div>
                                     <div class="contact-number">
-                                        <div class="phone-icon">📱</div>
-                                        <a href="tel:+919616171814" class="contact-link">+91 96161 71814</a>
+                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
+                                        <a href="tel:+919838075493" class="contact-link">+91 9838075493</a>
                                     </div>
                                 </div>
 
                                 <div class="contact-card">
                                     <div class="department-name">
-                                        <div class="department-icon">🎨</div>
+                                       
                                         Creative Department
                                     </div>
                                     <div class="contact-number">
-                                        <div class="phone-icon">📱</div>
-                                        <a href="tel:+919838075493" class="contact-link">+91 98380 75493</a>
+                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
+                                        <a href="tel:+919838075496" class="contact-link">+91 9838075496</a>
                                     </div>
                                 </div>
 
                                 <div class="contact-card">
                                     <div class="department-name">
-                                        <div class="department-icon">💻</div>
+                                        
                                         Software Development
                                     </div>
                                     <div class="contact-number">
-                                        <div class="phone-icon">📱</div>
-                                        <a href="tel:+919838075493" class="contact-link">+91 98380 75493</a>
+                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
+                                        <a href="tel:+9198380775495" class="contact-link">+91 98380775495</a>
                                     </div>
                                 </div>
 
                                 <div class="contact-card">
                                     <div class="department-name">
-                                        <div class="department-icon">💼</div>
+                                       
                                         Sales Department
                                     </div>
                                     <div class="contact-number">
-                                        <div class="phone-icon">📱</div>
-                                        <a href="tel:+919838075493" class="contact-link">+91 98380 75493</a>
+                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
+                                        <a href="tel:+919450529384" class="contact-link">+91 9450529384</a>
                                     </div>
                                 </div>
 
                                 <div class="contact-card">
                                     <div class="department-name">
-                                        <div class="department-icon">📈</div>
+                                       
                                         Digital Marketing / Administration
                                     </div>
                                     <div class="contact-number">
-                                        <div class="phone-icon">📱</div>
-                                        <a href="tel:+919838075493" class="contact-link">+91 98380 75493</a>
+                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
+                                        <a href="tel:+919336357172" class="contact-link">+91 9336357172</a>
                                     </div>
                                 </div>
 
                                 <div class="contact-card">
                                     <div class="department-name">
-                                        <div class="department-icon">🌐</div>
+                                       
                                         Web Department / MERN Department
                                     </div>
                                     <div class="contact-number">
-                                        <div class="phone-icon">📱</div>
-                                        <a href="tel:+919838075493" class="contact-link">+91 98380 75493</a>
+                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
+                                        <a href="tel:+919450563916" class="contact-link">+91 9450563916</a>
                                     </div>
                                 </div>
                             </div>
