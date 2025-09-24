@@ -663,6 +663,16 @@
                                         <a href="tel:+919450529384" class="contact-link">+91 9450529384</a>
                                     </div>
                                 </div>
+                                <div class="contact-card">
+                                    <div class="department-name">
+                                       
+                                         Sales Department
+                                    </div>
+                                    <div class="contact-number">
+                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
+                                        <a href="tel:+918004051509" class="contact-link">+91 8004051509</a>
+                                    </div>
+                                </div>
 
                                 <div class="contact-card">
                                     <div class="department-name">
@@ -685,6 +695,7 @@
                                         <a href="tel:+919450563916" class="contact-link">+91 9450563916</a>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
 
