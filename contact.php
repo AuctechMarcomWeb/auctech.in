@@ -259,7 +259,7 @@
                                         <div class="icon">
                                             <i class="flaticon-phone-call"></i>
                                         </div>
-                                        <a href="tel:916386452123" target="_blank"> Phone No : +91 6386452123 </a>
+                                        <a href="tel:919616171814" target="_blank"> Phone No : +91 9616171814 </a>
                                     </li>
                                 </ul>
                             </div>
@@ -367,9 +367,9 @@
                         <p><img width="25" height="25" src="https://img.icons8.com/ios/50/new-post--v1.png"
                                 alt="new-post--v1" /> <a href="mailto:info@auctech.in">info@auctech.in</a></p>
                         <p><img width="25" height="25" src="https://img.icons8.com/ios/50/phone--v1.png"
-                                alt="phone--v1" /> <a href="tel:+916386452123">+91 6386452123</a></p>
+                                alt="phone--v1" /> <a href="tel:+919616171814">+91 9616171814</a></p>
                         <p><img width="25" height="25" src="https://img.icons8.com/ios/50/phone--v1.png"
-                                alt="phone--v1" /> <a href="tel:+919838075490">+91 9838075490</a></p>
+                                alt="phone--v1" /> <a href="tel:+919838075493">+91 98380 75493</a></p>
                     </div>
                 </div>
             </div>
