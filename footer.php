@@ -71,33 +71,34 @@
                     </div>
                     <div class="wrap footer-col-block">
                         <p class="text tf-collapse-content ">
-                        <div class="d-flex mb-4 mt-4" style="gap: 8px;"><a class="text-light" href="tel: +916386452123">
-                                +91 6386452123,</a><a class="text-light" href="tel:+919838075490"> +91 9838075490</a>
+                        <div class="d-flex mb-4 mt-4" style="gap: 8px;"><a class="text-light" href="tel: +919616171814">
+                                +91 9616171814,</a><a class="text-light" href="tel:+919838075493"> +91 98380 75493</a>
                         </div>
                         <a class="text-light" href="mailto:info@auctech.in">info@auctech.in</a>
                         </p>
                     </div>
                     <ul class="social-list mt-4">
-                        <li>
-                            <a href="#">
-                                <i class="icon-facebook text-light"></i>
-                            </a>
+                       <li>
+                          <a href="https://www.facebook.com/auctechmarketing" target="_blank">
+                            <i class="icon-facebook text-light"></i>
+                          </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="icon-twitter text-light"></i>
-                            </a>
+                          <a href="https://www.instagram.com/auctech.marcom/" target="_blank">
+                           <i class="fa fa-instagram text-light"></i>
+                          </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="icon-linkedin text-light"></i>
-                            </a>
+                          <a href="https://www.linkedin.com/company/auctech-marketing-communications-pvt-ltd" target="_blank">
+                            <i class="icon-linkedin text-light"></i>
+                          </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="icon-youtube text-light"></i>
-                            </a>
+                          <a href="https://www.youtube.com/@auctechmarketingcommunication/" target="_blank">
+                            <i class="icon-youtube text-light"></i>
+                          </a>
                         </li>
+                       
                     </ul>
                 </div>
             </div>
@@ -122,9 +123,9 @@
 
 <div class="sticky-footer res-dd-none">
     <!-- Left Section: Phone Number -->
-    <a href="https://wa.me/6386452123" class="phone-link" target="_blank">
+    <a href="https://wa.me/9616171814" class="phone-link" target="_blank">
         <img width="25" height="25" src="https://img.icons8.com/ios-filled/50/f0571f/whatsapp--v1.png"
-            alt="whatsapp--v1"> +91 6386 452 123
+            alt="whatsapp--v1"> +91 9616171814
     </a>
     <!-- Right Section: Request a Demo Button -->
     <a class="demo-btn" href="contact">Contact Us</a>

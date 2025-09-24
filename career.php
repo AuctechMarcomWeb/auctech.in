@@ -105,11 +105,10 @@
             display: flex;
             background: #fff;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-            padding: 40px;
+            padding: 20px;
             border-radius: 12px;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
         }
 
         .contact-form {
@@ -205,14 +204,17 @@
                 flex-direction: column;
             }
 
-            .contact-form,
-            .contact-info {
+            .contact-form, .contact-info {
                 max-width: 100%;
                 padding: 0;
+                margin-bottom: 30px;
             }
 
             .form-grid {
                 grid-template-columns: 1fr;
+            }
+            .contact-container {
+                padding: 10px;
             }
         }
 
@@ -301,7 +303,7 @@
                                         <div class="icon">
                                             <i class="flaticon-phone-call"></i>
                                         </div>
-                                        <a href="tel:916386452123" target="_blank"> Phone No : +91 6386452123 </a>
+                                        <a href="tel:919616171814" target="_blank"> Phone No : +91 9616171814 </a>
                                     </li>
                                 </ul>
                             </div>
@@ -374,7 +376,7 @@
             <div class="tf-container mt-8r ">
                 <div class="contact-container">
                     <div class="contact-form">
-                        <h2 class="mb-4">Apply For Job</h2>
+                        <h2 class="mb-4">Lets Work Together</h2>
                         <!-- <p>We’re working to find new and better ways to help businesses succeed, and we’re
                             looking for people like you to help shape tomorrow at Auctech Marcom.</p> <br><br> -->
                         <form method="POST" action="admin/save_job.php" id="enquiryForm" enctype="multipart/form-data">
@@ -403,7 +405,7 @@
                                     accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx" id="image_path">
                             </div>
                             <div class="form-group mt-3">
-                                <textarea placeholder="Type Message.. *" name="message" required></textarea>
+                                <textarea placeholder="Why should we hire you?" name="message" required></textarea>
                             </div>
                             <div class="form-button">
                                 <button type="submit">Submit</button>
@@ -411,34 +413,110 @@
                         </form>
                     </div>
 
-                    <div class="contact-info">
-                        <h3 class="mb-4">Get In Touch With Us</h3>
-
-                        <p style="margin-bottom: 15px;">
-                            <img width="25" height="25" src="https://img.icons8.com/ios/50/marker--v1.png"
-                                alt="marker--v1" />
-                            Flat 101, Shaligram Building, New Jiamau, 1090 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chauraha,
+                    <!-- Contact Info Section -->
+                    <section class="auctech-contact contact-info">
+                      <h2>Get In Touch With Us</h2>
+                      <div class="contact-cards">
+                    
+                        <!-- Address -->
+                        <div class="contact-card">
+                          <img src="https://img.icons8.com/ios-filled/30/ff6a00/marker.png" alt="Address Icon"/>
+                          <h3>Our Address</h3>
+                          <p>
+                            Flat 101, Shaligram Building,<br>
+                            New Jiamau, 1090 Chauraha,<br>
                             Lucknow, Uttar Pradesh 226001
-                        </p>
-
-                        <span style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 15px;">
-                            <img width="25" height="25" src="https://img.icons8.com/ios/50/new-post--v1.png"
-                                alt="email-icon" />
+                          </p>
+                        </div>
+                    
+                        <!-- Email -->
+                        <div class="contact-card">
+                          <img src="https://img.icons8.com/ios-filled/30/ff3366/new-post.png" alt="Email Icon"/>
+                          <h3>Email Us</h3>
+                          <p>
                             <a href="mailto:info@auctech.in">info@auctech.in</a>
-                        </span>
-                        <br>
-                        <span style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 15px;">
-                            <img width="25" height="25" src="https://img.icons8.com/ios/50/phone--v1.png"
-                                alt="phone--v1" />
-                            <a href="tel:+916386452123">+91 6386452123</a>
-                        </span>
-                        <br>
-                        <span style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 15px;">
-                            <img width="25" height="25" src="https://img.icons8.com/ios/50/phone--v1.png"
-                                alt="phone--v1" />
-                            <a href="tel:+919838075490">+91 9838075490</a>
-                        </span>
-                    </div>
+                          </p>
+                        </div>
+                    
+                        <!-- Phone -->
+                        <div class="contact-card">
+                          <img src="https://img.icons8.com/ios-filled/30/00b894/phone.png" alt="Phone Icon"/>
+                          <h3>Call Us</h3>
+                          <p>
+                            <a href="tel:+919616171814">+91 9616171814</a>
+                          </p>
+                        </div>
+                    
+                      </div>
+                    </section>
+                    
+                    <style>
+                    /* Section */
+                    .auctech-contact {
+                      background: #fafafa;
+                      padding: 60px 20px;
+                      text-align: center;
+                    }
+                    
+                    .auctech-contact h2 {
+                      font-size: 28px;
+                      margin-bottom: 40px;
+                      font-weight: 700;
+                      background: linear-gradient(90deg, #ff6a00, #ff3366);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                    }
+                    
+                    /* Cards Layout */
+                    .contact-cards {
+                      display: grid;
+                      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                      gap: 25px;
+                      max-width: 1000px;
+                      margin: auto;
+                    }
+                    
+                    .contact-card {
+                      background: #fff;
+                      border-radius: 15px;
+                      padding: 25px 20px;
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                      transition: all 0.3s ease;
+                    }
+                    
+                    .contact-card:hover {
+                      transform: translateY(-8px);
+                      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+                    }
+                    
+                    .contact-card img {
+                      width: 20px;
+                      margin-bottom: 12px;
+                    }
+                    
+                    .contact-card h3 {
+                      font-size: 18px;
+                      margin-bottom: 10px;
+                      color: #333;
+                    }
+                    
+                    .contact-card p {
+                      font-size: 14px;
+                      color: #555;
+                      line-height: 1.6;
+                    }
+                    
+                    .contact-card a {
+                      color: #ff3366;
+                      text-decoration: none;
+                      transition: color 0.3s;
+                    }
+                    
+                    .contact-card a:hover {
+                      color: #ff6a00;
+                    }
+                    </style>
+
 
                 </div>
             </div>
@@ -446,7 +524,7 @@
             <!-- /form -->
 
             <!-- map -->
-            <div class="tf-spacing-1">
+            <div class="mt-5">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28476.327830104627!2d80.96280523448254!3d26.854548357608866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd10cfd0bb2f%3A0x36a1e3803e493540!2sAuctech%20Marketing%20Communication%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1751021883849!5m2!1sen!2sin"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -494,89 +572,112 @@
     <!-- /Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        $(document).ready(function () {
-            $('#enquiryForm').submit(function (e) {
-                e.preventDefault();
+$(document).ready(function () {
+    $('#enquiryForm').submit(function (e) {
+        e.preventDefault();
 
-                var phone = $('[name="phone"]').val();
-                var cvFile = $('[name="image_path"]')[0].files[0];
-                // Phone validation
-                if (!/^[0-9]{10}$/.test(phone)) {
-                    Swal.fire('Invalid Phone', 'Enter a valid 10 digit phone number', 'warning');
-                    return;
-                }
+        var form = this;
+        var submitBtn = $(form).find("button[type=submit]");
 
-                // File validation (CV or Image)
-                if (!cvFile) {
-                    Swal.fire('File Required', 'Please upload your CV or Image', 'warning');
-                    return;
-                }
-
-                var allowedTypes = [
-                    // Documents
-                    'application/pdf',
-                    'application/msword',
-                    'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-                    // Images
-                    'image/png',
-                    'image/jpeg',
-                    'image/jpg',
-                    'image/webp'
-                ];
-
-                // Check file type
-                if ($.inArray(cvFile.type, allowedTypes) === -1) {
-                    Swal.fire('Invalid File', 'Allowed formats: PDF, DOC, DOCX, PNG, JPG, JPEG, WEBP', 'warning');
-                    return;
-                }
-
-                // Check file size (max 3MB)
-                if (cvFile.size > 3 * 1024 * 1024) { // 3MB
-                    Swal.fire('File Too Large', 'File must be less than 3MB', 'warning');
-                    return;
-                }
-
-
-                // Prepare form data
-                var formData = new FormData(this);
-
-                // AJAX submission
-                $.ajax({
-                    url: 'admin/save_job.php',
-                    type: 'POST',
-                    data: formData,
-                    processData: false,
-                    contentType: false,
-                    success: function (response) {
-                        console.log("PHP Response:", response);
-                        response = response.trim();
-                        if (response == 'success') {
-                            Swal.fire({
-                                title: 'Thank You!',
-                                text: 'Your application has been successfully submitted. We will connect with you soon!',
-                                icon: 'success',
-                                customClass: {
-                                    title: 'swal-title',
-                                    htmlContainer: 'swal-text'
-                                }
-                            }).then(() => {
-                                $('#enquiryForm')[0].reset();
-                            });
-
-                        } else {
-                            Swal.fire('Error', response, 'error');
-                        }
-                    },
-                    error: function (xhr, status, error) {
-                        console.error("AJAX Error:", status, error);
-                        console.error("Response Text:", xhr.responseText);
-                        Swal.fire('Error', 'Something went wrong. Check console for details.', 'error');
-                    }
-                });
-
+        // Disable button on submit
+        submitBtn.prop("disabled", true)
+            .text("Submitting...")
+            .css({
+                "cursor": "not-allowed",
+                "opacity": "0.7"
             });
+
+        var phone = $('[name="phone"]').val();
+        var cvFile = $('[name="image_path"]')[0].files[0];
+
+        // Phone validation
+        if (!/^[0-9]{10}$/.test(phone)) {
+            Swal.fire('Invalid Phone', 'Enter a valid 10 digit phone number', 'warning');
+            resetBtn();
+            return;
+        }
+
+        // File validation (CV or Image)
+        if (!cvFile) {
+            Swal.fire('File Required', 'Please upload your CV or Image', 'warning');
+            resetBtn();
+            return;
+        }
+
+        var allowedTypes = [
+            'application/pdf',
+            'application/msword',
+            'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            'image/png',
+            'image/jpeg',
+            'image/jpg',
+            'image/webp'
+        ];
+
+        if ($.inArray(cvFile.type, allowedTypes) === -1) {
+            Swal.fire('Invalid File', 'Allowed formats: PDF, DOC, DOCX, PNG, JPG, JPEG, WEBP', 'warning');
+            resetBtn();
+            return;
+        }
+
+        if (cvFile.size > 3 * 1024 * 1024) {
+            Swal.fire('File Too Large', 'File must be less than 3MB', 'warning');
+            resetBtn();
+            return;
+        }
+
+        var formData = new FormData(this);
+
+        // AJAX submission
+        $.ajax({
+            url: 'admin/save_job.php',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                console.log("PHP Response:", response);
+                response = response.trim();
+                if (response == 'success') {
+                    Swal.fire({
+                        title: 'Thank You!',
+                        text: 'Your application has been successfully submitted. We will connect with you soon!',
+                        icon: 'success',
+                        customClass: {
+                            title: 'swal-title',
+                            htmlContainer: 'swal-text'
+                        }
+                    }).then(() => {
+                        $('#enquiryForm')[0].reset();
+                    });
+                } else {
+                    Swal.fire('Error', response, 'error');
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX Error:", status, error);
+                console.error("Response Text:", xhr.responseText);
+                Swal.fire('Error', 'Something went wrong. Check console for details.', 'error');
+            },
+            complete: function () {
+                // Re-enable button after request completes
+                resetBtn();
+            }
         });
-    </script>
+
+        // Function to reset button
+        function resetBtn() {
+            submitBtn.prop("disabled", false)
+                .text("Submit")
+                .css({
+                    "cursor": "pointer",
+                    "opacity": "1"
+                });
+        }
+    });
+});
+</script>
+
 
 </body>
 

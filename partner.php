@@ -128,7 +128,7 @@
                                         <div class="icon">
                                             <i class="flaticon-phone-call"></i>
                                         </div>
-                                        <a href="tel:916386452123" target="_blank"> Phone No : +91 6386452123 </a>
+                                        <a href="tel:919616171814" target="_blank"> Phone No : +91 9616171814 </a>
                                     </li>
                                 </ul>
                             </div>

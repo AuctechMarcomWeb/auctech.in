@@ -1,5 +1,5 @@
 <!-- Header -->
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     .auctech-bg {
         background: linear-gradient(45deg, #b93e76, #f49e33);
@@ -92,7 +92,57 @@
         transition: all 0.3s ease;
         text-transform: uppercase;
     }
+    
+          /* floting-icon */
+        .fl-fl {
+            background:  linear-gradient(45deg, #c12e88, #f1592a, #f5b316);
+        }
 
+        .fl-fl {
+           color:white;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding: 15px;
+            width: 200px;
+            position: fixed;
+            right: -153px;
+            z-index: 1000;
+            font: normal normal 10px Arial;
+            -webkit-transition: all .25s 
+        ease;
+            -moz-transition: all .25s ease;
+            -ms-transition: all .25s ease;
+            -o-transition: all .25s ease;
+            transition: all .25s 
+        ease;
+        display: flex
+        ;
+            align-items: center;
+            gap:40px;
+        }
+        .float-fb {
+            top: 160px;
+        }
+        .float-tw {
+            top: 220px;
+        }
+        .float-rs {
+            top: 280px;
+        }
+        .float-ig {
+            top: 340px;
+        }
+        .float-wh {
+            top: 400px;
+        }
+        .fl-fl i {
+        
+          font-size: 26px;
+        }
+        .fl-fl:hover {
+          transform: translateX(-130px);
+        }
+    
     /* ---=====MEDIA QUERY====== */
 
     @media (max-width: 768px) {
@@ -151,17 +201,50 @@
         }
     }
 
-    @media (max-width: 575px) {
-        .footer-inner {
-            gap: 50px !important;
+    @media (max-width: 875px) {
+        .fl-fl {
+            padding: 8px;
+            width: 190px;
         }
-
-        .tf-collapse-content {
-            display: block !important;
+        .float-tw {
+            top: 205px;
+        }
+        .float-rs {
+            top: 250px;
+        }
+        .float-ig {
+            top: 295px;
+        }
+        .float-wh {
+            top: 340px;
         }
     }
 </style>
+        <div class="float-sm ">
+      <div class="fl-fl float-fb">
+        <i class="fa fa-facebook"></i>
+        <a href="https://www.facebook.com/auctechmarketing" target="_blank" style="color: white;">
+          Like us!</a>
+      </div>
+      <div class="fl-fl float-tw">
+        <i class="fa fa-instagram"></i>
+        <a href="https://www.instagram.com/auctech.marcom/" target="_blank" style="color: white; ">Follow us!</a>
+      </div>
 
+      <div class="fl-fl float-rs">
+        <i class="fa fa-linkedin"></i>
+        <a href="https://www.linkedin.com/company/auctech-marketing-communications-pvt-ltd" target="_blank"
+          style="color: white; ">Follow us !</a>
+      </div>
+      <div class="fl-fl float-ig">
+      <img width="26" height="26" src="https://img.icons8.com/ios-filled/FFFFFF/youtube-play.png" alt=""/>
+        <a href="https://www.youtube.com/@auctechmarketingcommunication/" target="_blank" style="color: white; ">Follow us!</a>
+      </div>
+      <div class="fl-fl float-wh">
+        <i class="fa fa-whatsapp"></i>
+        <a href="https://wa.me/919616171814" target="_blank" style="color: white; ">Contact us!</a>
+      </div>
+    </div>
 <div class="tf-container w-1780">
     <div class="row">
         <div class="col-lg-12">
@@ -213,7 +296,7 @@
                                 </ul>
                             </li>
                             <li class="item ">
-                                <a href="partner">
+                                <a href="partner" target="_blank">
                                     <span>
                                         Partners
                                     </span>
@@ -324,7 +407,7 @@
                                     <a class="item-menu-mobile" href="partner"> Partners</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a class="item-menu-mobile" href="https://auctechmarketing.com/" target="_blank"> Marketing</a>
+                                    <a class="item-menu-mobile" href="https://auctechmarketing.com/"> Marketing</a>
                                 </li>
 
                                 <li class="menu-item menu-item-has-children-mobile">
@@ -332,7 +415,7 @@
                                     </a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a class="item-menu-mobile" href="career)">Career
+                                    <a class="item-menu-mobile" href="career">Career
                                     </a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
@@ -367,8 +450,8 @@
                                 </li>
                                 <li>
                                     <p>
-                                        Call: <a href="tel:+916386452123">
-                                            +91 6386452123,
+                                        Call: <a href="tel:+919616171814">
+                                            +91 9616171814,
                                         </a>
                                         <a href="tel:+919838075490">
                                             +91 9838075490
