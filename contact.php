@@ -191,7 +191,7 @@
             -webkit-text-fill-color: transparent;
             display: inline-block;
             text-decoration: none;
-            font-size: 24px;
+            font-size: 26px;
             margin-bottom: 20px;
             font-weight: 600;
         }
