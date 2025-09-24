@@ -182,6 +182,15 @@
         }
 
         .contact-info h3 {
+            /* font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600; */
+
+            background: linear-gradient(45deg, #c12e88, #f1592a, #f5b316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            text-decoration: none;
             font-size: 24px;
             margin-bottom: 20px;
             font-weight: 600;
@@ -215,7 +224,7 @@
             }
 
             .form-grid {
-                grid-template-columns: 1fr;
+                /* grid-template-columns: 1fr; */
             }
         }
         
@@ -426,7 +435,7 @@
             
             .contact-grid {
                 grid-template-columns: 1fr;
-                gap: 0.8rem;
+                gap: 1.8rem;
             }
             
             .table-header h2 {
