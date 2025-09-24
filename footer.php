@@ -63,9 +63,8 @@
                         <h5 class="footer-title">Contact Info</h5>
                         <a target="_blank" href="https://maps.app.goo.gl/DPJwrRKGzfMFzVFv6">
                             <p class="text tf-collapse-content text-light ">
-                                Flat 101, Shaligram Building,
-                                New Jiamau, 1090 Chauraha,
-                                Lucknow, Uttar Pradesh 226001
+                               New Jiamau, 1090 Chauraha, 167/101, Shaligram Building, Hazratganj, Lucknow, Uttar Pradesh
+                                            226001
                             </p>
                         </a>
                     </div>

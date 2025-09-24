@@ -218,6 +218,236 @@
         
     </style>
 
+    <!-- abhishek -->
+      <style>
+        .table-responsive {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .floating-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .shape {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            top: 70%;
+            right: 10%;
+            animation-delay: 2s;
+        }
+
+        .shape:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            top: 40%;
+            right: 15%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.5; }
+            50% { transform: translateY(-15px) rotate(180deg); opacity: 0.8; }
+        }
+
+        .table-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .table-header h2 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .table-header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1rem;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 1.2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .contact-card:hover::before {
+            left: 100%;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .department-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .department-icon {
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            flex-shrink: 0;
+        }
+
+        .contact-number {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.7rem 0.9rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .contact-number:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.02);
+        }
+
+        .phone-icon {
+            width: 18px;
+            height: 18px;
+            background: linear-gradient(45deg, #4facfe, #00f2fe);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9px;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+        }
+
+        .contact-link:hover {
+            color: #ffd93d;
+            text-decoration: none;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .table-responsive {
+                padding: 1.5rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 0.8rem;
+            }
+            
+            .table-header h2 {
+                font-size: 1.5rem;
+            }
+            
+            .contact-card {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .table-responsive {
+                padding: 1rem;
+            }
+            
+            .department-name {
+                font-size: 1rem;
+            }
+            
+            .contact-link {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
 </head>
 
 <body class="counter-scroll-8">
@@ -269,8 +499,7 @@
                                         <div class="icon">
                                             <i class="flaticon-placeholder"></i>
                                         </div>
-                                        <a href="https://maps.app.goo.gl/DPJwrRKGzfMFzVFv6" target="_blank"> Flat 101,
-                                            Shaligram Building, New Jiamau, 1090 Chauraha, Lucknow, Uttar Pradesh
+                                        <a href="https://maps.app.goo.gl/DPJwrRKGzfMFzVFv6" target="_blank">New Jiamau, 1090 Chauraha, 167/101, Shaligram Building, Hazratganj, Lucknow, Uttar Pradesh
                                             226001</a>
                                     </li>
 
@@ -361,16 +590,91 @@
                     <div class="contact-info">
                         <h3>Get In Touch With Us</h3>
                         <p><img width="25" height="25" src="https://img.icons8.com/ios/50/marker--v1.png"
-                                alt="marker--v1" /> Flat 101, Shaligram Building,</p>
-                        <p>New Jiamau, 1090 Chauraha,</p>
+                                alt="marker--v1" /> New Jiamau, 1090 Chauraha, 167/101,</p>
+                        <p>Shaligram Building, Hazratganj,</p>
                         <p>Lucknow, Uttar Pradesh 226001</p>
-                        <p><img width="25" height="25" src="https://img.icons8.com/ios/50/new-post--v1.png"
+                        <p> <img width="25" height="25" src="https://img.icons8.com/ios/50/new-post--v1.png"
                                 alt="new-post--v1" /> <a href="mailto:info@auctech.in">info@auctech.in</a></p>
-                        <p><img width="25" height="25" src="https://img.icons8.com/ios/50/phone--v1.png"
-                                alt="phone--v1" /> <a href="tel:+919616171814">+91 9616171814</a></p>
-                        <p><img width="25" height="25" src="https://img.icons8.com/ios/50/phone--v1.png"
-                                alt="phone--v1" /> <a href="tel:+919838075493">+91 98380 75493</a></p>
-                    </div>
+
+                       <div class="table-responsive">
+                            <div class="floating-shapes">
+                                <div class="shape"></div>
+                                <div class="shape"></div>
+                                <div class="shape"></div>
+                            </div>
+                            
+                            
+
+                            <div class="contact-grid">
+                                <div class="contact-card">
+                                    <div class="department-name">
+                                        <div class="department-icon">📞</div>
+                                        Customer Support
+                                    </div>
+                                    <div class="contact-number">
+                                        <div class="phone-icon">📱</div>
+                                        <a href="tel:+919616171814" class="contact-link">+91 96161 71814</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-card">
+                                    <div class="department-name">
+                                        <div class="department-icon">🎨</div>
+                                        Creative Department
+                                    </div>
+                                    <div class="contact-number">
+                                        <div class="phone-icon">📱</div>
+                                        <a href="tel:+919838075493" class="contact-link">+91 98380 75493</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-card">
+                                    <div class="department-name">
+                                        <div class="department-icon">💻</div>
+                                        Software Development
+                                    </div>
+                                    <div class="contact-number">
+                                        <div class="phone-icon">📱</div>
+                                        <a href="tel:+919838075493" class="contact-link">+91 98380 75493</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-card">
+                                    <div class="department-name">
+                                        <div class="department-icon">💼</div>
+                                        Sales Department
+                                    </div>
+                                    <div class="contact-number">
+                                        <div class="phone-icon">📱</div>
+                                        <a href="tel:+919838075493" class="contact-link">+91 98380 75493</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-card">
+                                    <div class="department-name">
+                                        <div class="department-icon">📈</div>
+                                        Digital Marketing / Administration
+                                    </div>
+                                    <div class="contact-number">
+                                        <div class="phone-icon">📱</div>
+                                        <a href="tel:+919838075493" class="contact-link">+91 98380 75493</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-card">
+                                    <div class="department-name">
+                                        <div class="department-icon">🌐</div>
+                                        Web Department / MERN Department
+                                    </div>
+                                    <div class="contact-number">
+                                        <div class="phone-icon">📱</div>
+                                        <a href="tel:+919838075493" class="contact-link">+91 98380 75493</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>  
                 </div>
             </div>
 
