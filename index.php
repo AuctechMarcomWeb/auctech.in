@@ -239,7 +239,7 @@
                                 </h2>
                                 <div class="counter-wrap">
                                     <div class="wg-counter style-2">
-                                        <span class="sub-odo auctech-color">1000</span>
+                                        <span class="sub-odo auctech-color">2000</span>
                                         <span class="sub-odo auctech-color">+</span>
                                     </div>
                                     <h4 class=" mt-5">
@@ -248,7 +248,7 @@
                                 </div>
                                 <div class="counter-wrap">
                                     <div class="wg-counter style-2">
-                                        <span class="sub-odo auctech-color">13</span>
+                                        <span class="sub-odo auctech-color">19</span>
                                         <span class="sub-odo auctech-color">+</span>
                                     </div>
                                     <h4 class=" mt-5">

@@ -69,15 +69,15 @@
         }
 
         .section-content {
-            padding: 30px;
+            padding: 0px;
         }
 
         .main-helpline {
-            background: linear-gradient(45deg, #b93e76, #f49e33);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 20px;
             border-radius: 12px;
-            margin-bottom: 18px;
+            margin-bottom: 30px;
             text-align: center;
         }
 
@@ -86,11 +86,10 @@
             margin-bottom: 8px;
             font-weight: 500;
             opacity: 0.95;
-              color: white !important;
         }
 
         .main-helpline .number {
-            font-size: 22px;
+            font-size: 28px;
             font-weight: 700;
             letter-spacing: 2px;
         }
@@ -107,7 +106,7 @@
             font-weight: 600;
             color: #2d3748;
             margin-bottom: 20px;
-            padding-bottom: 0px;
+            padding-bottom: 10px;
             border-bottom: 3px solid #667eea;
             display: flex;
             align-items: center;
@@ -143,7 +142,7 @@
         .dept-card {
             background: #f8f9fa;
             border-left: 4px solid #667eea;
-            padding: 20px;
+                padding: 8px;
             border-radius: 8px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -196,33 +195,6 @@
             font-size: 20px;
         }
 
-        .dept-card.software-dev .dept-title::before {
-            content: "💻";
-        }
-
-        .dept-card.creative-prod .dept-title::before {
-            content: "🎨";
-        }
-
-        .dept-card.digital-marketing .dept-title::before {
-            content: "📱";
-        }
-
-        .dept-card.sales .dept-title::before {
-            content: "💼";
-        }
-
-        .dept-card.hr-admin .dept-title::before {
-            content: "👥";
-        }
-
-        .dept-card.administration .dept-title::before {
-            content: "⚙️";
-        }
-
-        .dept-card.management .dept-title::before {
-            content: "🏆";
-        }
 
         .contact-details {
             display: grid;
@@ -370,7 +342,7 @@
             border-radius: 12px;
             flex-wrap: wrap;
             justify-content: space-between;
-            /* align-items: center; */
+            align-items: center;
         }
 
         .contact-form {
@@ -453,9 +425,8 @@
             display: inline-block;
             text-decoration: none;
             font-size: 26px;
-            margin-bottom: 12px;
+            margin-bottom: 20px;
             font-weight: 600;
-            margin-top:14px;
         }
 
         .contact-info p
@@ -492,249 +463,6 @@
         
     </style>
 
-    <!-- abhishek -->
-      <style>
-
-        .helpline{
-            font-size: 26px;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: white;
-            display: flex;
-            justify-content: center;
-
-   
-        }
-
-        .table-responsive {
-            position: relative;
-            overflow: hidden;
-            border-radius: 16px;
-           
-           
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            margin-top: 16px;
-        }
-
-        .floating-shapes {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 0;
-        }
-
-        .shape {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .shape:nth-child(1) {
-            width: 60px;
-            height: 60px;
-            top: 10%;
-            left: 5%;
-            animation-delay: 0s;
-        }
-
-        .shape:nth-child(2) {
-            width: 40px;
-            height: 40px;
-            top: 70%;
-            right: 10%;
-            animation-delay: 2s;
-        }
-
-        .shape:nth-child(3) {
-            width: 80px;
-            height: 80px;
-            top: 40%;
-            right: 15%;
-            animation-delay: 4s;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.5; }
-            50% { transform: translateY(-15px) rotate(180deg); opacity: 0.8; }
-        }
-
-        .table-header {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .table-header h2 {
-            color: white;
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .table-header p {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 1rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
-            gap: 1rem;
-            position: relative;
-            z-index: 2;
-            animation: fadeInUp 0.8s ease-out;
-        }
-
-        .contact-card {
-           background: linear-gradient(45deg, #b93e76, #f49e33);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 12px;
-            padding: 1.2rem;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .contact-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .contact-card:hover::before {
-            left: 100%;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            border-color: rgba(255, 255, 255, 0.4);
-        }
-
-        .department-name {
-            /* font-size: 1.1rem; */
-            font-size:16px;
-            font-weight: 600;
-            color: white;
-            margin-bottom: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .department-icon {
-            width: 20px;
-            height: 20px;
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 10px;
-            flex-shrink: 0;
-        }
-
-        .contact-number {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.7rem 0.9rem;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .contact-number:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: scale(1.02);
-        }
-
-        .phone-icon {
-            width: 18px;
-            height: 18px;
-            /* background: linear-gradient(45deg, #4facfe, #00f2fe); */
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 9px;
-            color: white;
-            flex-shrink: 0;
-        }
-
-        .contact-link {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 13px;
-            letter-spacing: 0.3px;
-        }
-
-        .contact-link:hover {
-            color: #ffd93d;
-            text-decoration: none;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .table-responsive {
-                padding: 1.5rem;
-            }
-            
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 1.8rem;
-            }
-            
-            .table-header h2 {
-                font-size: 1.5rem;
-            }
-            
-            .contact-card {
-                padding: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .table-responsive {
-                padding: 1rem;
-            }
-            
-            .department-name {
-                font-size: 1.6rem;
-            }
-            
-            .contact-link {
-                font-size: 1.4rem;
-            }
-        }
-    </style>
 
 </head>
 
@@ -891,122 +619,110 @@
                                 <div class="shape"></div>
                             </div>
                             
-                            <div class="contact-card">
-                                       
-                                         <div class="helpline">Customer  Care Helpline</div>
-                                    <!-- <a href="tel:+919838075493" class="number"> +91 9838075493</a> -->
-                                     <div class="contact-number" style="justify-content: center;">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919838075493" class="contact-link">+91 9838075493</a>
-                                    </div>
+
+
+                            <section class="contact-directory-section">
+        <div class="section-header">
+            <h2> Direct Contact us</h2>
+           
+        </div>
+
+        <div class="section-content">
+            <div class="main-helpline">
+                <h3>Customer  Care Helpline</h3>
+                <div class="number">9838075493</div>
+            </div>
+
+            <div class="columns-container">
+                <!-- Department Contacts Column -->
+                <div class="department-column">
+                    <h3 class="column-title">Department Contacts</h3>
+                    <div class="departments-grid">
+                        <div class="dept-card software-dev">
+                            <div class="dept-title">Software Development</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                    
+                                    <span class="contact-value">9838075495</span>
+                                  
+                                   
+                                </div>
+                                <div class="contact-row">
+                                    
+                                  
+                                    <span class="contact-value">9838075416</span>
+                                   
+                                </div>
+                               
                             </div>
-                             <h3 class="column-title">Department Contacts</h3>
+                        </div>
 
-                            <div class="contact-grid">
-
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                        
-                                        Software Development
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+9198380775495" class="contact-link">+91 98380775495</a>
-                                    </div>
+                        <div class="dept-card creative-prod">
+                            <div class="dept-title">Creative Production</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                
+                                    <span class="contact-value">9838075496</span>
                                 </div>
+                               
+                            </div>
+                        </div>
 
-                                 <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                         Software Development
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919450563916" class="contact-link">+91 9450563916</a>
-                                    </div>
+                        <div class="dept-card digital-marketing">
+                            <div class="dept-title">Digital Marketing</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                 
+                                    <span class="contact-value">9838077172</span>
                                 </div>
+                            </div>
+                        </div>
 
+                        <div class="dept-card sales">
+                            <div class="dept-title">Sales Department</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                   <span class="contact-value">9838077184</span>
+                                 
+                                </div>
+                                 <div class="contact-row">
+                                   
+                                  <span class="contact-value">9838077109</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Administration Column -->
+                <div class="admin-column">
+                    <h3 class="column-title">Administration</h3>
+                    <div class="admin-grid">
+                        <div class="dept-card hr-admin">
+                            <div class="dept-title">HR & Administration</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                
+                                    <span class="contact-value">9838077172</span>
+                                </div>
                               
-
-                               
-                                
-
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                        Sales Department
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919450529384" class="contact-link">+91 9450529384</a>
-                                    </div>
-                                </div>
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                         Sales Department
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+918004051509" class="contact-link">+91 8004051509</a>
-                                    </div>
-                                </div>
-
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                        Digital Marketing / Administration
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919336357172" class="contact-link">+91 9336357172</a>
-                                    </div>
-                                </div>
-
-                                 <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                        Creative Department
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919838075496" class="contact-link">+91 9838075496</a>
-                                    </div >
-                                </div>
-
-
-                               
-                                
                             </div>
+                        </div>
 
-                             <h3 class="column-title" style=" margin-top: 14px;">Administration</h3>
-
-                            <div class="contact-grid">
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                        
-                                        HR & Administration
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919336357172" class="contact-link">+91 9336357172</a>
-                                    </div>
+                        <div class="dept-card management">
+                            <div class="dept-title">Management</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                   
+                                    <span class="contact-value">9838075490</span>
                                 </div>
-
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                         Management
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919838075490" class="contact-link">+91 9838075490</a>
-                                    </div>
-                                </div>
-
-                                
-                                
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
