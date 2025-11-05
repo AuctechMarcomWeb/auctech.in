@@ -37,7 +37,7 @@
     <link rel="shortcut icon" href="images/logo/new-logo.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/new-logo.png" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <style>
+<style>
 
         /* ABhishek */
 
@@ -853,6 +853,7 @@
                 <div class="contact-container">
                     <div class="contact-form">
                         <h2>Send us a Message</h2>
+                        <!-- Put this where your form was -->
                         <form method="post" action="save_contact.php" id="enquiryForm">
                             <div class="form-grid">
                                 <div class="form-group">
@@ -863,16 +864,31 @@
                                 </div>
                             </div>
                             <div class="form-group mb-3">
-                                <input type="email" name="email" id="email" placeholder="Enter Email address *"
-                                    required>
+                                <input type="email" name="email" id="email" placeholder="Enter Email address *" required>
+                            </div>
+                             <div class="form-group mb-3">
+                               <input id="autocomplete" placeholder="Enter your address" type="text" required />
                             </div>
                             <div class="form-group">
                                 <textarea placeholder="Type Message.. *" name="message" required></textarea>
                             </div>
+                        
+                            <!-- Honeypot (hidden) -->
+                            <input type="text" name="phone_" id="phone_hidden" style="position:absolute;left:-9999px;top:auto;opacity:0;" autocomplete="off">
+                        
+                            <!-- reCAPTCHA v2 widget -->
+                            <div class="form-group mb-3">
+                                <div class="g-recaptcha" data-sitekey="6Ld8H94rAAAAAIp4S9vn7mEaSosdpQahmdzW0oME"></div>
+                            </div>
+                        
                             <div class="form-button">
                                 <button type="submit">Submit</button>
                             </div>
                         </form>
+                        
+                        <!-- Load reCAPTCHA script -->
+                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
                     </div>
 
                     <div class="contact-info">
@@ -891,7 +907,9 @@
                                 <div class="shape"></div>
                             </div>
                             
-                            <div class="contact-card">
+                            
+
+                           <div class="contact-card">
                                        
                                          <div class="helpline">Customer  Care Helpline</div>
                                     <!-- <a href="tel:+919838075493" class="number"> +91 9838075493</a> -->
@@ -1007,9 +1025,6 @@
                                 
                                 
                             </div>
-
-
-
                         </div>
 
                     </div>  
@@ -1069,9 +1084,15 @@
     <script>
         document.getElementById('enquiryForm').addEventListener('submit', function (e) {
             e.preventDefault();
-
-            var phone = document.getElementById('phone').value;
-            if (!/^\d{10}$/.test(phone)) {
+        
+            // Honeypot check (extra client side, server will also check)
+            if (document.getElementById('phone_hidden').value.trim() !== '') {
+                // Very likely a bot
+                return;
+            }
+        
+            var phone = document.getElementById('phone').value.trim();
+            if (phone !== '' && !/^\d{10}$/.test(phone)) {
                 Swal.fire({
                     title: 'Invalid Phone!',
                     html: '<p style="font-size:16px;">Phone number must be exactly 10 digits.</p>',
@@ -1080,33 +1101,72 @@
                 });
                 return;
             }
-
-            var formData = new FormData(this);
-
-            fetch('save_contact.php', {
+        
+            // Check reCAPTCHA response (v2 checkbox)
+            var recaptchaResponse = grecaptcha.getResponse();
+            if (recaptchaResponse.length === 0) {
+                Swal.fire({
+                    title: 'CAPTCHA Required',
+                    html: '<p style="font-size:16px;">Please complete the "I\'m not a robot" checkbox.</p>',
+                    icon: 'warning',
+                    confirmButtonText: 'OK'
+                });
+                return;
+            }
+        
+            var form = this;
+            var formData = new FormData(form);
+        
+            // ensure the g-recaptcha-response is sent (include explicitly)
+            formData.append('g-recaptcha-response', recaptchaResponse);
+        
+            fetch(form.action, {
                 method: 'POST',
-                body: formData
+                body: formData,
+                credentials: 'same-origin'
             })
-                .then(response => response.text())
-                .then(result => {
+            .then(response => response.text())
+            .then(result => {
+                // Expecting 'success' or some error text from PHP
+                if (result.trim().indexOf('success') !== -1) {
                     Swal.fire({
                         title: 'Thank You!',
-                       html: '<p style="font-size:16px; color:#333;">Thank you for reaching out to <b>Auctech Marcom</b>.<br>Our team has received your query and will get back to you shortly.</p>',
+                        html: '<p style="font-size:16px; color:#333;">Thank you for reaching out to <b>Auctech Marcom</b>.<br>Our team has received your query and will get back to you shortly.</p>',
                         icon: 'success',
                         confirmButtonText: 'OK'
-                    }).then(() => location.reload());
-                })
-                .catch(error => {
+                    }).then(() => {
+                        // reset captcha and reload or clear form as needed
+                        grecaptcha.reset();
+                        location.reload();
+                    });
+                } else {
                     Swal.fire({
                         title: 'Error!',
-                        text: 'Something went wrong.',
+                        html: '<p style="font-size:14px;">' + (result || 'Something went wrong.') + '</p>',
                         icon: 'error',
                         confirmButtonText: 'OK'
                     });
+                }
+            })
+            .catch(error => {
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Something went wrong. ' + error,
+                    icon: 'error',
+                    confirmButtonText: 'OK'
                 });
+            });
         });
-
     </script>
+    <script>
+  function initAutocomplete() {
+    const input = document.getElementById('autocomplete');
+    const autocomplete = new google.maps.places.Autocomplete(input);
+  }
+
+  google.maps.event.addDomListener(window, 'load', initAutocomplete);
+</script>
+
 </body>
 
 </html>

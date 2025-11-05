@@ -406,10 +406,22 @@
                             <div class="form-group mt-3">
                                 <textarea placeholder="Why should we hire you?" name="message" required></textarea>
                             </div>
+                            
+                            <!-- Honeypot (hidden) -->
+                            <input type="text" name="phone_" id="phone_hidden" style="position:absolute;left:-9999px;top:auto;opacity:0;" autocomplete="off">
+                        
+                            <!-- reCAPTCHA v2 widget -->
+                            <div class="form-group mb-3">
+                                <div class="g-recaptcha" data-sitekey="6Ld8H94rAAAAAIp4S9vn7mEaSosdpQahmdzW0oME"></div>
+                            </div>
+                            
+                            
                             <div class="form-button">
                                 <button type="submit">Submit</button>
                             </div>
                         </form>
+                        <!-- Load reCAPTCHA script -->
+                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                     </div>
 
                     <!-- Contact Info Section -->
@@ -624,6 +636,61 @@ $(document).ready(function () {
             resetBtn();
             return;
         }
+        
+          // Check reCAPTCHA response (v2 checkbox)
+            var recaptchaResponse = grecaptcha.getResponse();
+            if (recaptchaResponse.length === 0) {
+                Swal.fire({
+                    title: 'CAPTCHA Required',
+                    html: '<p style="font-size:16px;">Please complete the "I\'m not a robot" checkbox.</p>',
+                    icon: 'warning',
+                    confirmButtonText: 'OK'
+                });
+                return;
+            }
+        
+            var form = this;
+            var formData = new FormData(form);
+        
+            // ensure the g-recaptcha-response is sent (include explicitly)
+            formData.append('g-recaptcha-response', recaptchaResponse);
+        
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                credentials: 'same-origin'
+            })
+            .then(response => response.text())
+            .then(result => {
+                // Expecting 'success' or some error text from PHP
+                if (result.trim().indexOf('success') !== -1) {
+                    Swal.fire({
+                        title: 'Thank You!',
+                        html: '<p style="font-size:16px; color:#333;">Your application has been successfully submitted. We will connect with you soon!.</p>',
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    }).then(() => {
+                        // reset captcha and reload or clear form as needed
+                        grecaptcha.reset();
+                        location.reload();
+                    });
+                } else {
+                    Swal.fire({
+                        title: 'Error!',
+                        html: '<p style="font-size:14px;">' + (result || 'Something went wrong.') + '</p>',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+                }
+            })
+            .catch(error => {
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Something went wrong. ' + error,
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+            });
 
         var formData = new FormData(this);
 
@@ -663,6 +730,8 @@ $(document).ready(function () {
                 resetBtn();
             }
         });
+        
+        
 
         // Function to reset button
         function resetBtn() {
@@ -676,6 +745,7 @@ $(document).ready(function () {
     });
 });
 </script>
+
 
 
 </body>
