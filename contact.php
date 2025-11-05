@@ -38,6 +38,266 @@
     <link rel="apple-touch-icon-precomposed" href="images/logo/new-logo.png" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <style>
+
+        /* ABhishek */
+
+          .contact-directory-section {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            max-width: 1400px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .section-header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .section-content {
+            padding: 30px;
+        }
+
+        .main-helpline {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .main-helpline h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: 500;
+            opacity: 0.95;
+        }
+
+        .main-helpline .number {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .columns-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .column-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+        }
+
+        .department-column .column-title::before {
+            content: "🏢";
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .admin-column .column-title {
+            border-bottom-color: #fa709a;
+        }
+
+        .admin-column .column-title::before {
+            content: "⚙️";
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .departments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .admin-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .dept-card {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dept-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .dept-card.software-dev {
+            border-left-color: #667eea;
+        }
+
+        .dept-card.creative-prod {
+            border-left-color: #f093fb;
+        }
+
+        .dept-card.digital-marketing {
+            border-left-color: #4facfe;
+        }
+
+        .dept-card.sales {
+            border-left-color: #43e97b;
+        }
+
+        .dept-card.hr-admin {
+            border-left-color: #fa709a;
+        }
+
+        .dept-card.administration {
+            border-left-color: #feca57;
+        }
+
+        .dept-card.management {
+            border-left-color: #ee5a6f;
+        }
+
+        .dept-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .dept-title::before {
+            content: "📞";
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .dept-card.software-dev .dept-title::before {
+            content: "💻";
+        }
+
+        .dept-card.creative-prod .dept-title::before {
+            content: "🎨";
+        }
+
+        .dept-card.digital-marketing .dept-title::before {
+            content: "📱";
+        }
+
+        .dept-card.sales .dept-title::before {
+            content: "💼";
+        }
+
+        .dept-card.hr-admin .dept-title::before {
+            content: "👥";
+        }
+
+        .dept-card.administration .dept-title::before {
+            content: "⚙️";
+        }
+
+        .dept-card.management .dept-title::before {
+            content: "🏆";
+        }
+
+        .contact-details {
+            display: grid;
+            gap: 10px;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            padding: 6px 0;
+        }
+
+        .contact-label {
+            font-size: 13px;
+            color: #718096;
+            min-width: 100px;
+            font-weight: 500;
+        }
+
+        .contact-value {
+            font-size: 16px;
+            font-weight: 600;
+            color: #667eea;
+            letter-spacing: 1px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 11px;
+            margin-left: 8px;
+            font-weight: 600;
+        }
+
+        .note-text {
+            color: #718096;
+            font-size: 13px;
+            font-style: italic;
+        }
+
+        @media (max-width: 1024px) {
+            .columns-container {
+                grid-template-columns: 1fr;
+            }
+
+            .departments-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .departments-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-content {
+                padding: 20px;
+            }
+
+            .main-helpline .number {
+                font-size: 22px;
+            }
+        }
+
+
+
+
+
+
+        /* abhishek end */
+
+
+
         .header-inner .logo-site img {
             height: 80px;
         }
@@ -619,7 +879,7 @@
                             
                             
 
-                            <div class="contact-grid">
+                            <!-- <div class="contact-grid">
                                 <div class="contact-card">
                                     <div class="department-name">
                                         
@@ -696,7 +956,126 @@
                                     </div>
                                 </div>
                                 
+                            </div> -->
+
+
+                            <section class="contact-directory-section">
+        <div class="section-header">
+            <h2> Direct Contact us</h2>
+           
+        </div>
+
+        <div class="section-content">
+            <div class="main-helpline">
+                <h3>Customer  Care Helpline</h3>
+                <div class="number">9838075498</div>
+            </div>
+
+            <div class="columns-container">
+                <!-- Department Contacts Column -->
+                <div class="department-column">
+                    <h3 class="column-title">Department Contacts</h3>
+                    <div class="departments-grid">
+                        <div class="dept-card software-dev">
+                            <div class="dept-title">Software Development</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                    <span class="contact-label">Department:</span>
+                                    <span class="contact-value">9838095436</span>
+                                    <span class="badge">Ext 98</span>
+                                </div>
+                                <div class="contact-row">
+                                    <span class="contact-label">Mobile (Rps):</span>
+                                    <span class="contact-value">16</span>
+                                </div>
                             </div>
+                        </div>
+
+                        <div class="dept-card creative-prod">
+                            <div class="dept-title">Creative Production</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                    <span class="contact-label">Callback:</span>
+                                    <span class="contact-value">8938075476</span>
+                                </div>
+                                <div class="contact-row">
+                                    <span class="contact-label">Extension:</span>
+                                    <span class="contact-value">9493</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dept-card digital-marketing">
+                            <div class="dept-title">Digital Marketing</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                    <span class="contact-label">Extension:</span>
+                                    <span class="contact-value">84</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dept-card sales">
+                            <div class="dept-title">Sales Department</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                    <span class="contact-label">Line 1:</span>
+                                    <span class="contact-value">09</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Administration Column -->
+                <div class="admin-column">
+                    <h3 class="column-title">Administration</h3>
+                    <div class="admin-grid">
+                        <div class="dept-card hr-admin">
+                            <div class="dept-title">HR & Administration</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                    <span class="contact-label">Direct Line:</span>
+                                    <span class="contact-value">XXXXXX9172</span>
+                                </div>
+                                <div class="contact-row">
+                                    <span class="contact-label">Availability:</span>
+                                    <span class="note-text">2 days a week</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dept-card administration">
+                            <div class="dept-title">Administration</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                    <span class="contact-label">Direct Line:</span>
+                                    <span class="contact-value">XXXXXX9172</span>
+                                </div>
+                                <div class="contact-row">
+                                    <span class="contact-label">Note:</span>
+                                    <span class="note-text">Available 2 days</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dept-card management">
+                            <div class="dept-title">Management</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                    <span class="contact-label">Direct Line:</span>
+                                    <span class="contact-value">9838075490</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
                         </div>
 
                     </div>  
