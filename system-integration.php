@@ -114,7 +114,7 @@
                                         <div class="icon">
                                             <i class="flaticon-phone-call"></i>
                                         </div>
-                                        <a href="tel:916386452123" target="_blank"> Phone No : +91 6386452123 </a>
+                                        <a href="tel:919838075493" target="_blank"> Phone No : +91 9838075493 </a>
                                     </li>
                                 </ul>
                             </div>
@@ -417,7 +417,7 @@
 
             <div class="tf-container tf-spacing-1">
                 <p class="text-justify text">We have experience in the implementation of SMART CARD for the visitors/delegates in a VIP movement held in Baba Saheb Bhimrao Ambedkar University – Lucknow. <br>
-                <strong>For more details kindly visit : </strong> <a href="www.sibook.in" target="_blank" class="auctech-color">www.sibook.in</a> </p>
+                <strong>For more details kindly visit : </strong> <a href="https://www.sibook.in" target="_blank" class="auctech-color">www.sibook.in</a> </p>
             </div>
 
         </div><!-- /.Main-content -->

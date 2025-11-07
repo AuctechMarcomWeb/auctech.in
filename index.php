@@ -36,9 +36,16 @@
     <link rel="stylesheet" type="text/css" href="icons/flaticon/font/flaticon_saylo.css" />
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="images/logo/new-logo.png" />
-    <link rel="apple-touch-icon-precomposed" href="images/logo/new-logo.png" />
+    <!--<link rel="shortcut icon" href="images/logo/new-logo.png" />-->
+    <!--<link rel="apple-touch-icon-precomposed" href="images/logo/new-logo.png" />-->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo/new-logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/logo/new-logo.png">
+<link rel="apple-touch-icon" href="/images/logo/new-logo.png">
+
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!--Google Map API Key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnJ6wqD5RHEOoZEhjBaJ2HnajGTA3Rzkw&libraries=places"></script>
 </head>
 
 <body class="counter-scroll-2">
@@ -80,7 +87,7 @@
                                         <div class="icon">
                                             <i class="flaticon-phone-call"></i>
                                         </div>
-                                        <a href="tel:919616171814" target="_blank"> Phone No : +91 9616171814 </a>
+                                        <a href="tel:919838075493" target="_blank"> Phone No : +91 9838075493 </a>
                                     </li>
                                 </ul>
                             </div>
@@ -218,7 +225,7 @@
                                     businesses, multi-national companies, small and medium enterprises, NGO's and
                                     start-ups.
                                 </p>
-                                <a href="our-service" class="tf-btn style-14 text-anime-style-1">
+                                <a href="marcom-lab" class="tf-btn style-14 text-anime-style-1">
                                     Read More
                                     <i class="icon-chevron-right"></i>
                                 </a>
@@ -309,7 +316,7 @@
                                     <span class="line style-stand">
 
                                     </span>
-                                    <a href="our-service" class="tf-btn style-3 text-anime-style-1">Explore All
+                                    <a href="tech-consulting" class="tf-btn style-3 text-anime-style-1">Explore All
                                         Services <i class="icon-chevron-right"></i></a>
                                 </div>
                             </div>

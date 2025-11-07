@@ -133,7 +133,7 @@
                                         <div class="icon">
                                             <i class="flaticon-phone-call"></i>
                                         </div>
-                                        <a href="tel:916386452123" target="_blank"> Phone No : +91 6386452123 </a>
+                                        <a href="tel:919838075493" target="_blank"> Phone No : +91 9838075493 </a>
                                     </li>
                                 </ul>
                             </div>
@@ -393,7 +393,7 @@
                                         <i class="icon-angles-right moveLeftToRight"></i>
                                         FUNDAMENTAL STATeMENT
                                     </p>
-                                    <p class="auctech-color s-title mb-60  text-clamp-4">
+                                    <p class="auctech-color s-title mb-40  text-clamp-4">
                                         Our Foundational Purpose
                                     </p>
                                     <p class="text-justify text mb-40">
@@ -470,6 +470,43 @@
                 </div>
             </section>
             <!-- /.Section-our-saylo -->
+            
+            <!-- Section-about-company -->
+            <section class="s-about-company " style="padding-bottom:80px">
+                <div class="relative z-5">
+                    <div class="tf-container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="content-section">
+                                    <p class="s-sub-title">
+                                        <i class="icon-angles-right moveLeftToRight"></i>
+                                        Our Goal
+                                    </p>
+                                    <p class="auctech-color s-title mb-40  text-clamp-4">
+                                      Driving Growth Through Innovation and Purpose
+                                    </p>
+                                    <p class="text-justify text mb-40">
+                                       Our goal is to empower businesses to achieve sustainable growth through smart, data-driven digital solutions. We aim to bridge the gap between technology and creativity, ensuring every project delivers measurable success. 
+                                    </p>
+                                    <p class="text-justify text mb-40">
+                                        By focusing on performance, innovation, and client satisfaction, we strive to turn ideas into impactful digital experiences that help brands reach their full potential.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-5 offset-lg-1">
+                                <div class="image-wrap">
+                                    <div class="image">
+                                        <img src="images/Marcom-Lab/5.png" data-src="images/Marcom-Lab/5.png" alt=""
+                                            class="lazyload tf-animate-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.Section-about-company -->
 
 
         </div><!-- /.Main-content -->

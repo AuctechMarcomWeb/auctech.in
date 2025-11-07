@@ -690,6 +690,32 @@
             color: #ffd93d;
             text-decoration: none;
         }
+        .wide{
+            padding: 19px 19px 16px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            border: 1px solid #0000001f !important;
+            border-radius: 10px;
+
+        }
+        .list {
+            background-color: #F4F4F4;
+
+        }
+       .option {
+            cursor: pointer;
+            font-weight: 400;
+            line-height: 40px;
+            list-style: none;
+            min-height: 40px;
+            outline: none;
+            padding-left: 18px;
+            padding-right: 29px;
+            text-align: left;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+        }
 
         @keyframes fadeInUp {
             from {
@@ -777,7 +803,7 @@
                                         <div class="icon">
                                             <i class="flaticon-phone-call"></i>
                                         </div>
-                                        <a href="tel:919616171814" target="_blank"> Phone No : +91 9616171814 </a>
+                                        <a href="tel:919838075493" target="_blank"> Phone No : +91 9838075493 </a>
                                     </li>
                                 </ul>
                             </div>
@@ -869,6 +895,33 @@
                              <div class="form-group mb-3">
                                <input id="autocomplete" placeholder="Enter your address" type="text" required />
                             </div>
+                           
+                                 <div class="form-group mb-3">
+                                    <select class="wide" name="subject" required>
+                                       <option value="">Select a Service</option>
+                                       <option value="Branding & Digital PR">Branding & Digital PR</option>
+                                       <option value="Website Development">Website Development</option>
+                                       <option value="Customized Software Development">Customized Software Development
+                                       </option>
+                                       <option value="Mobile App Development">Mobile App Development</option>
+                                       <option value="SEO Services">SEO Services</option>
+                                       <option value="Social Media Marketing (SMM)">Social Media Marketing (SMM)
+                                       </option>
+                                       <option value="Search Engine Marketing (SEM)">Search Engine Marketing (SEM)
+                                       </option>
+                                       <option value="Pay-Per-Click (PPC)">Pay-Per-Click (PPC)</option>
+                                       <option value="Creative Design">Creative Design</option>
+                                       <option value="Logo Design & Identity">Logo Design & Identity</option>
+                                       <option value="E-commerce Solutions">E-commerce Solutions</option>
+                                       <option value="Email & WhatsApp Marketing">Email & WhatsApp Marketing</option>
+                                       <option value="Digital Campaign Management">Digital Campaign Management</option>
+                                       <option value="Digital Strategy Consulting">Digital Strategy Consulting</option>
+                                       <option value="Website / App Maintenance">Website / App Maintenance</option>
+                                       <option value="Other / Custom Requirement">Other / Custom Requirement</option>
+
+                                    </select>
+                                 </div>
+                             
                             <div class="form-group">
                                 <textarea placeholder="Type Message.. *" name="message" required></textarea>
                             </div>
@@ -893,12 +946,15 @@
 
                     <div class="contact-info">
                         <h3>Get In Touch With Us</h3>
-                        <p><img width="25" height="25" src="https://img.icons8.com/ios/50/marker--v1.png"
+                        <a href="https://maps.app.goo.gl/UShFpUgDU9v7aFV78">
+                            <p><img width="25" height="25" src="https://img.icons8.com/ios/50/marker--v1.png"
                                 alt="marker--v1" /> New Jiamau, 1090 Chauraha, 167/101,</p>
-                        <p>Shaligram Building, Hazratganj,</p>
-                        <p>Lucknow, Uttar Pradesh 226001</p>
+                            <p>Shaligram Building, Hazratganj,</p>
+                            <p>Lucknow, Uttar Pradesh 226001</p>
+                        </a>
                         <p> <img width="25" height="25" src="https://img.icons8.com/ios/50/new-post--v1.png"
-                                alt="new-post--v1" /> <a href="mailto:info@auctech.in">info@auctech.in</a></p>
+                                alt="new-post--v1" /> <a href="mailto:info@auctech.in">info@auctech.in</a>
+                        </p>
 
                        <div class="table-responsive">
                             <div class="floating-shapes">
@@ -910,126 +966,138 @@
                             
 
                            <div class="contact-card">
-                                       
-                                         <div class="helpline">Customer  Care Helpline</div>
-                                    <!-- <a href="tel:+919838075493" class="number"> +91 9838075493</a> -->
-                                     <div class="contact-number" style="justify-content: center;">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919838075493" class="contact-link">+91 9838075493</a>
+                                <div class="helpline">Customer  Care Helpline</div>
+                                <div class="contact-number" style=" justify-content: center;">
+                                    <a href="tel:+919838075493">
+                                        <div class="phone-icon">
+                                        <img width="16" height="16" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/>
                                     </div>
+                                    </a>
+                                    <a href="tel:+919838075493" class="contact-link" style="font-size:18px">+91 9838075493</a>
+                                    <a href="https://wa.me/919838075493" class="whatsapp-link" target="_blank">
+                                        <img width="18" height="18" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp.png" alt="whatsapp"/>
+                                    </a>
+                                </div>
                             </div>
-                             <h3 class="column-title">Department Contacts</h3>
+                             <!-- Department Contacts -->
+                                <!-- <h3 class="column-title" style="justify-content: center; display: flex;">Department Contacts</h3> -->
 
-                            <div class="contact-grid">
+                                <div class="contact-grid" style="margin-top:10px">
 
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                        
-                                        Software Development
+                                        <div class="contact-card">
+                                            <div class="department-name">Software Development (Web Apps)</div>
+                                            <div class="contact-number">
+                                               <a href="tel:+9198380775495">
+                                                 <img width="14" height="14" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/>
+                                               </a>
+                                                <a href="tel:+9198380775495" class="contact-link">+91 98380775495</a>
+                                                <a href="https://wa.me/9198380775495" class="whatsapp-link" target="_blank">
+                                                    <img width="18" height="18" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp.png" alt="whatsapp"/>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-card">
+                                            <div class="department-name">Software Development (Mobile Apps)</div>
+                                            <div class="contact-number">
+                                               <a href="tel:+919450563916">
+                                                 <img width="14" height="14" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/>
+                                               </a>
+                                                <a href="tel:+919450563916" class="contact-link">+91 9450563916</a>
+                                                <a href="https://wa.me/919450563916" class="whatsapp-link" target="_blank">
+                                                    <img width="18" height="18" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp.png" alt="whatsapp"/>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-card">
+                                            <div class="department-name">Sales Department</div>
+                                            <div class="contact-number">
+                                                <a href="tel:+919450529384">
+                                                 <img width="14" height="14" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/>
+                                               </a>
+                                                <a href="tel:+919450529384" class="contact-link">+91 9450529384</a>
+                                                <a href="https://wa.me/919450529384" class="whatsapp-link" target="_blank">
+                                                    <img width="18" height="18" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp.png" alt="whatsapp"/>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-card">
+                                            <div class="department-name">Sales Department</div>
+                                            <div class="contact-number">
+                                                <a href="tel:+918004051509">
+                                                 <img width="14" height="14" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/>
+                                               </a>
+                                                <a href="tel:+918004051509" class="contact-link">+91 8004051509</a>
+                                                <a href="https://wa.me/918004051509" class="whatsapp-link" target="_blank">
+                                                    <img width="18" height="18" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp.png" alt="whatsapp"/>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-card">
+                                            <div class="department-name">Digital Marketing (Social Media/SEO)</div>
+                                            <div class="contact-number">
+                                               <a href="tel:+919336357172">
+                                                 <img width="14" height="14" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/>
+                                               </a>
+                                                <a href="tel:+919336357172" class="contact-link">+91 9336357172</a>
+                                                <a href="https://wa.me/919336357172" class="whatsapp-link" target="_blank">
+                                                    <img width="18" height="18" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp.png" alt="whatsapp"/>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-card">
+                                            <div class="department-name">Creative Production Department</div>
+                                            <div class="contact-number">
+                                                <a href="tel:+919838075496">
+                                                 <img width="14" height="14" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/>
+                                               </a>
+                                                <a href="tel:+919838075496" class="contact-link">+91 9838075496</a>
+                                                <a href="https://wa.me/919838075496" class="whatsapp-link" target="_blank">
+                                                    <img width="18" height="18" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp.png" alt="whatsapp"/>
+                                                </a>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+9198380775495" class="contact-link">+91 98380775495</a>
+
+                                    <!-- Administration -->
+                                    <h3 class="column-title" style="justify-content: center; display: flex;">Administration</h3>
+
+                                    <div class="contact-grid">
+                                        <div class="contact-card">
+                                            <div class="department-name">HR & Administration</div>
+                                            <div class="contact-number">
+                                                <a href="tel:+919336357172">
+                                                 <img width="14" height="14" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/>
+                                               </a>
+                                                <a href="tel:+919336357172" class="contact-link">+91 9336357172</a>
+                                                <a href="https://wa.me/919336357172" class="whatsapp-link" target="_blank">
+                                                    <img width="18" height="18" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp.png" alt="whatsapp"/>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-card">
+                                            <div class="department-name">Management</div>
+                                            <div class="contact-number">
+                                                <a href="tel:+919838075490">
+                                                 <img width="14" height="14" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/>
+                                               </a>
+                                                <a href="tel:+919838075490" class="contact-link">+91 9838075490</a>
+                                                <a href="https://wa.me/919838075490" class="whatsapp-link" target="_blank">
+                                                    <img width="18" height="18" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp.png" alt="whatsapp"/>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
-                                 <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                         Software Development
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919450563916" class="contact-link">+91 9450563916</a>
-                                    </div>
-                                </div>
-
-                              
-
-                               
-                                
-
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                        Sales Department
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919450529384" class="contact-link">+91 9450529384</a>
-                                    </div>
-                                </div>
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                         Sales Department
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+918004051509" class="contact-link">+91 8004051509</a>
-                                    </div>
-                                </div>
-
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                        Digital Marketing / Administration
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919336357172" class="contact-link">+91 9336357172</a>
-                                    </div>
-                                </div>
-
-                                 <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                        Creative Department
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919838075496" class="contact-link">+91 9838075496</a>
-                                    </div >
-                                </div>
-
-
-                               
-                                
-                            </div>
-
-                             <h3 class="column-title" style=" margin-top: 14px;">Administration</h3>
-
-                            <div class="contact-grid">
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                        
-                                        HR & Administration
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919336357172" class="contact-link">+91 9336357172</a>
-                                    </div>
-                                </div>
-
-                                <div class="contact-card">
-                                    <div class="department-name">
-                                       
-                                         Management
-                                    </div>
-                                    <div class="contact-number">
-                                        <div class="phone-icon"><img width="12" height="12" src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="phone"/></div>
-                                        <a href="tel:+919838075490" class="contact-link">+91 9838075490</a>
-                                    </div>
-                                </div>
-
-                                
-                                
-                            </div>
+                            </div>  
                         </div>
-
-                    </div>  
-                </div>
-            </div>
+                    </div>
 
             <!-- /form -->
 
