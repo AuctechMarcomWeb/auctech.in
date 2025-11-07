@@ -70,8 +70,7 @@
                     </div>
                     <div class="wrap footer-col-block">
                         <p class="text tf-collapse-content ">
-                        <div class="d-flex mb-4 mt-4" style="gap: 8px;"><a class="text-light" href="tel: +919616171814">
-                                +91 9616171814,</a><a class="text-light" href="tel:+919838075493"> +91 98380 75493</a>
+                        <div class="d-flex mb-4 mt-4" style="gap: 8px;"><a class="text-light" href="tel:+919838075493"> +91 98380 75493</a>
                         </div>
                         <a class="text-light" href="mailto:info@auctech.in">info@auctech.in</a>
                         </p>
@@ -103,8 +102,7 @@
             </div>
         </div>
         <div class="col-lg-12">
-            <div class="footer-bottom relative" style="display: flex
-; justify-content: center; align-items: center;">
+            <div class="footer-bottom relative" style="display: flex; justify-content: center; align-items: center;">
                 <a href="#" class="footer-go-top">
                     <i class="icon-arrow-top fs-8"></i>
                 </a>
@@ -122,9 +120,9 @@
 
 <div class="sticky-footer res-dd-none">
     <!-- Left Section: Phone Number -->
-    <a href="https://wa.me/9616171814" class="phone-link" target="_blank">
+    <a href="https://wa.me/9838075493" class="phone-link" target="_blank">
         <img width="25" height="25" src="https://img.icons8.com/ios-filled/50/f0571f/whatsapp--v1.png"
-            alt="whatsapp--v1"> +91 9616171814
+            alt="whatsapp--v1"> +91 9838075493
     </a>
     <!-- Right Section: Request a Demo Button -->
     <a class="demo-btn" href="contact">Contact Us</a>

@@ -133,7 +133,7 @@
                                         <div class="icon">
                                             <i class="flaticon-phone-call"></i>
                                         </div>
-                                        <a href="tel:919838075493" target="_blank"> Phone No : +91 9838075493 </a>
+                                        <a href="tel:919838075493" target="_blank"  style="font-size: 18px;"> Customer Care Helpline No : +91 9838075493 </a>
                                     </li>
                                 </ul>
                             </div>
