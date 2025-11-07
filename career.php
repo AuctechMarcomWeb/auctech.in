@@ -303,7 +303,7 @@
                                         <div class="icon">
                                             <i class="flaticon-phone-call"></i>
                                         </div>
-                                        <a href="tel:919838075493" target="_blank"> Phone No : +91 9838075493 </a>
+                                        <a href="tel:919838075493" target="_blank"  style="font-size: 18px;"> Customer Care Helpline : +91 9838075493 </a>
                                     </li>
                                 </ul>
                             </div>
@@ -385,7 +385,7 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="number" name="phone" id="phone" minlength="10" maxlength="10"
-                                        placeholder="Enter Your Phone">
+                                        placeholder="Enter Your Phone *" required>
                                 </div>
                             </div>
                             <div class="form-grid">
@@ -394,17 +394,17 @@
                                         required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="post" placeholder="Enter Job Position" required>
+                                    <input type="text" name="post" placeholder="Enter Job Position *" required>
                                 </div>
                             </div>
 
                             <div class="form-group mb-4">
-                                <label class="mb-3">CV/Resume</label>
+                                <label class="mb-3">CV/Resume *</label>
                                 <input type="file" name="image_path" required
                                     accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx" id="image_path">
                             </div>
                             <div class="form-group mt-3">
-                                <textarea placeholder="Why should we hire you?" name="message" required></textarea>
+                                <textarea placeholder="Why should we hire you? *" name="message" required></textarea>
                             </div>
                             
                             <!-- Honeypot (hidden) -->
@@ -454,7 +454,7 @@
                           <img src="https://img.icons8.com/ios-filled/30/00b894/phone.png" alt="Phone Icon"/>
                           <h3>Call Us</h3>
                           <p>
-                            <a href="tel:+919616171814">+91 9616171814</a>
+                            <a href="tel:+919838075493">+91 9838075493</a>
                           </p>
                         </div>
                     
