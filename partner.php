@@ -128,7 +128,7 @@
                                         <div class="icon">
                                             <i class="flaticon-phone-call"></i>
                                         </div>
-                                        <a href="tel:916386452123" target="_blank"> Phone No : +91 6386452123 </a>
+                                        <a href="tel:919838075493" target="_blank"> Phone No : +91 9838075493 </a>
                                     </li>
                                 </ul>
                             </div>
@@ -138,8 +138,7 @@
                                         <div class="icon">
                                             <i class="flaticon-placeholder"></i>
                                         </div>
-                                        <a href="https://maps.app.goo.gl/DPJwrRKGzfMFzVFv6" target="_blank"> Flat 101,
-                                            Shaligram Building, New Jiamau, 1090 Chauraha, Lucknow, Uttar Pradesh
+                                        <a href="https://maps.app.goo.gl/DPJwrRKGzfMFzVFv6" target="_blank">New Jiamau, 1090 Chauraha, 167/101, Shaligram Building, Hazratganj, Lucknow, Uttar Pradesh
                                             226001</a>
                                     </li>
 

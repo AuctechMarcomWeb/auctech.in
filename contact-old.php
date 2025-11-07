@@ -38,6 +38,239 @@
     <link rel="apple-touch-icon-precomposed" href="images/logo/new-logo.png" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <style>
+
+        /* ABhishek */
+
+          .contact-directory-section {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            max-width: 1400px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+          
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .section-header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .section-content {
+            padding: 0px;
+        }
+
+        .main-helpline {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .main-helpline h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: 500;
+            opacity: 0.95;
+        }
+
+        .main-helpline .number {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .columns-container {
+            display: grid;
+            /* grid-template-columns: 2fr 1fr; */
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .column-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+        }
+
+        .department-column .column-title::before {
+            content: "🏢";
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .admin-column .column-title {
+            border-bottom-color: #fa709a;
+        }
+
+        .admin-column .column-title::before {
+            content: "⚙️";
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .departments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .admin-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .dept-card {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+                padding: 8px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dept-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .dept-card.software-dev {
+            border-left-color: #667eea;
+        }
+
+        .dept-card.creative-prod {
+            border-left-color: #f093fb;
+        }
+
+        .dept-card.digital-marketing {
+            border-left-color: #4facfe;
+        }
+
+        .dept-card.sales {
+            border-left-color: #43e97b;
+        }
+
+        .dept-card.hr-admin {
+            border-left-color: #fa709a;
+        }
+
+        .dept-card.administration {
+            border-left-color: #feca57;
+        }
+
+        .dept-card.management {
+            border-left-color: #ee5a6f;
+        }
+
+        .dept-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .dept-title::before {
+            content: "📞";
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+
+        .contact-details {
+            display: grid;
+            gap: 10px;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            padding: 6px 0;
+        }
+
+        .contact-label {
+            font-size: 13px;
+            color: #718096;
+            min-width: 100px;
+            font-weight: 500;
+        }
+
+        .contact-value {
+            font-size: 16px;
+            font-weight: 600;
+            color: #667eea;
+            letter-spacing: 1px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 11px;
+            margin-left: 8px;
+            font-weight: 600;
+        }
+
+        .note-text {
+            color: #718096;
+            font-size: 13px;
+            font-style: italic;
+        }
+
+        @media (max-width: 1024px) {
+            .columns-container {
+                grid-template-columns: 1fr;
+            }
+
+            .departments-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .departments-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-content {
+                padding: 20px;
+            }
+
+            .main-helpline .number {
+                font-size: 22px;
+            }
+        }
+
+
+
+
+
+
+        /* abhishek end */
+
+
+
         .header-inner .logo-site img {
             height: 80px;
         }
@@ -105,10 +338,11 @@
             display: flex;
             background: #fff;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-            padding: 20px;
+            padding: 40px;
             border-radius: 12px;
             flex-wrap: wrap;
             justify-content: space-between;
+            align-items: center;
         }
 
         .contact-form {
@@ -125,7 +359,7 @@
 
             text-decoration: none;
             font-size: 26px;
-
+            margin-bottom: 30px;
             font-weight: 600;
         }
 
@@ -181,14 +415,23 @@
         }
 
         .contact-info h3 {
-            font-size: 24px;
+            /* font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600; */
 
+            background: linear-gradient(45deg, #c12e88, #f1592a, #f5b316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 26px;
+            margin-bottom: 20px;
             font-weight: 600;
         }
 
-        .contact-info p,
-        .contact-info a {
-
+        .contact-info p
+        {
+            margin-bottom: 10px;
             font-size: 16px;
             color: #333;
             text-decoration: none;
@@ -202,65 +445,24 @@
         @media (max-width: 768px) {
             .contact-container {
                 flex-direction: column;
+                padding: 10px;
+                gap: 20px;
+    
             }
 
-            .contact-form, .contact-info {
+            .contact-form,
+            .contact-info {
                 max-width: 100%;
                 padding: 0;
-                margin-bottom: 30px;
             }
 
             .form-grid {
-                grid-template-columns: 1fr;
-            }
-            .contact-container {
-                padding: 10px;
+                /* grid-template-columns: 1fr; */
             }
         }
-
-        form textarea,
-        form input[type=text],
-        form input[type=password],
-        form input[type=datetime],
-        form input[type=datetime-local],
-        form input[type=date],
-        form input[type=month],
-        form input[type=time],
-        form input[type=week],
-        form input[type=number],
-        form input[type=email],
-        form input[type=url],
-        form input[type=search],
-        form input[type=tel],
-        form input[type=color] {
-            outline: 0;
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
-            box-shadow: none;
-            width: 100%;
-            padding: 10px 19px 10px !important;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 30px;
-            background-color: var(--White);
-            border: 1px solid var(--Border);
-            border-radius: 10px;
-            color: var(--Soft-Text);
-            overflow: hidden;
-            margin-bottom: 0;
-        }
-
-        .swal-title {
-            font-size: 16px !important;
-
-            font-weight: bold;
-        }
-
-        .swal-text {
-            font-size: 16px !important;
-
-        }
+        
     </style>
+
 
 </head>
 
@@ -303,7 +505,7 @@
                                         <div class="icon">
                                             <i class="flaticon-phone-call"></i>
                                         </div>
-                                        <a href="tel:919838075493" target="_blank"> Phone No : +91 9838075493 </a>
+                                        <a href="tel:919616171814" target="_blank"> Phone No : +91 9616171814 </a>
                                     </li>
                                 </ul>
                             </div>
@@ -313,7 +515,7 @@
                                         <div class="icon">
                                             <i class="flaticon-placeholder"></i>
                                         </div>
-                                        <a href="https://maps.app.goo.gl/DPJwrRKGzfMFzVFv6" target="_blank"> New Jiamau, 1090 Chauraha, 167/101, Shaligram Building, Hazratganj, Lucknow, Uttar Pradesh
+                                        <a href="https://maps.app.goo.gl/DPJwrRKGzfMFzVFv6" target="_blank">New Jiamau, 1090 Chauraha, 167/101, Shaligram Building, Hazratganj, Lucknow, Uttar Pradesh
                                             226001</a>
                                     </li>
 
@@ -346,7 +548,10 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <p class="auctech-color title">
-                                    Career
+                                    Contact
+                                    <span>
+                                        Us
+                                    </span>
                                 </p>
                                 <div class="breadcrums">
                                     <a href="index">
@@ -356,7 +561,7 @@
                                         <i class="icon-chevron-r"></i>
                                     </div>
                                     <a href="#" class="current">
-                                        Career
+                                        Contact Us
                                     </a>
                                 </div>
                             </div>
@@ -375,167 +580,162 @@
             <div class="tf-container mt-8r ">
                 <div class="contact-container">
                     <div class="contact-form">
-                        <h2 class="mb-4">Lets Work Together</h2>
-                        <!-- <p>We’re working to find new and better ways to help businesses succeed, and we’re
-                            looking for people like you to help shape tomorrow at Auctech Marcom.</p> <br><br> -->
-                        <form method="POST" action="admin/save_job.php" id="enquiryForm" enctype="multipart/form-data">
+                        <h2>Send us a Message</h2>
+                        <form method="post" action="save_contact.php" id="enquiryForm">
                             <div class="form-grid">
                                 <div class="form-group">
                                     <input type="text" name="name" placeholder="Enter Name *" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" name="phone" id="phone" minlength="10" maxlength="10"
-                                        placeholder="Enter Your Phone">
+                                    <input type="number" name="phone" id="phone" minlength="10" maxlength="10" placeholder="Enter Your Phone">
                                 </div>
                             </div>
-                            <div class="form-grid">
-                                <div class="form-group mb-3">
-                                    <input type="email" name="email" id="email" placeholder="Enter Email address *"
-                                        required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="post" placeholder="Enter Job Position" required>
-                                </div>
-                            </div>
-
-                            <div class="form-group mb-4">
-                                <label class="mb-3">CV/Resume</label>
-                                <input type="file" name="image_path" required
-                                    accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx" id="image_path">
-                            </div>
-                            <div class="form-group mt-3">
-                                <textarea placeholder="Why should we hire you?" name="message" required></textarea>
-                            </div>
-                            
-                            <!-- Honeypot (hidden) -->
-                            <input type="text" name="phone_" id="phone_hidden" style="position:absolute;left:-9999px;top:auto;opacity:0;" autocomplete="off">
-                        
-                            <!-- reCAPTCHA v2 widget -->
                             <div class="form-group mb-3">
-                                <div class="g-recaptcha" data-sitekey="6Ld8H94rAAAAAIp4S9vn7mEaSosdpQahmdzW0oME"></div>
+                                <input type="email" name="email" id="email" placeholder="Enter Email address *"
+                                    required>
                             </div>
-                            
-                            
+                            <div class="form-group">
+                                <textarea placeholder="Type Message.. *" name="message" required></textarea>
+                            </div>
                             <div class="form-button">
                                 <button type="submit">Submit</button>
                             </div>
                         </form>
-                        <!-- Load reCAPTCHA script -->
-                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                     </div>
 
-                    <!-- Contact Info Section -->
-                    <section class="auctech-contact contact-info">
-                      <h2>Get In Touch With Us</h2>
-                      <div class="contact-cards">
-                    
-                        <!-- Address -->
-                        <div class="contact-card">
-                          <img src="https://img.icons8.com/ios-filled/30/ff6a00/marker.png" alt="Address Icon"/>
-                          <h3>Our Address</h3>
-                          <p>
-                            Flat 101, Shaligram Building,<br>
-                            New Jiamau, 1090 Chauraha,<br>
-                            Lucknow, Uttar Pradesh 226001
-                          </p>
-                        </div>
-                    
-                        <!-- Email -->
-                        <div class="contact-card">
-                          <img src="https://img.icons8.com/ios-filled/30/ff3366/new-post.png" alt="Email Icon"/>
-                          <h3>Email Us</h3>
-                          <p>
-                            <a href="mailto:info@auctech.in">info@auctech.in</a>
-                          </p>
-                        </div>
-                    
-                        <!-- Phone -->
-                        <div class="contact-card">
-                          <img src="https://img.icons8.com/ios-filled/30/00b894/phone.png" alt="Phone Icon"/>
-                          <h3>Call Us</h3>
-                          <p>
-                            <a href="tel:+919616171814">+91 9616171814</a>
-                          </p>
-                        </div>
-                    
-                      </div>
-                    </section>
-                    
-                    <style>
-                    /* Section */
-                    .auctech-contact {
-                      background: #fafafa;
-                      padding: 60px 20px;
-                      text-align: center;
-                    }
-                    
-                    .auctech-contact h2 {
-                      font-size: 28px;
-                      margin-bottom: 40px;
-                      font-weight: 700;
-                      background: linear-gradient(90deg, #ff6a00, #ff3366);
-                      -webkit-background-clip: text;
-                      -webkit-text-fill-color: transparent;
-                    }
-                    
-                    /* Cards Layout */
-                    .contact-cards {
-                      display: grid;
-                      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-                      gap: 25px;
-                      max-width: 1000px;
-                      margin: auto;
-                    }
-                    
-                    .contact-card {
-                      background: #fff;
-                      border-radius: 15px;
-                      padding: 25px 20px;
-                      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-                      transition: all 0.3s ease;
-                    }
-                    
-                    .contact-card:hover {
-                      transform: translateY(-8px);
-                      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-                    }
-                    
-                    .contact-card img {
-                      width: 20px;
-                      margin-bottom: 12px;
-                    }
-                    
-                    .contact-card h3 {
-                      font-size: 18px;
-                      margin-bottom: 10px;
-                      color: #333;
-                    }
-                    
-                    .contact-card p {
-                      font-size: 14px;
-                      color: #555;
-                      line-height: 1.6;
-                    }
-                    
-                    .contact-card a {
-                      color: #ff3366;
-                      text-decoration: none;
-                      transition: color 0.3s;
-                    }
-                    
-                    .contact-card a:hover {
-                      color: #ff6a00;
-                    }
-                    </style>
+                    <div class="contact-info">
+                        <h3>Get In Touch With Us</h3>
+                        <p><img width="25" height="25" src="https://img.icons8.com/ios/50/marker--v1.png"
+                                alt="marker--v1" /> New Jiamau, 1090 Chauraha, 167/101,</p>
+                        <p>Shaligram Building, Hazratganj,</p>
+                        <p>Lucknow, Uttar Pradesh 226001</p>
+                        <p> <img width="25" height="25" src="https://img.icons8.com/ios/50/new-post--v1.png"
+                                alt="new-post--v1" /> <a href="mailto:info@auctech.in">info@auctech.in</a></p>
+
+                       <div class="table-responsive">
+                            <div class="floating-shapes">
+                                <div class="shape"></div>
+                                <div class="shape"></div>
+                                <div class="shape"></div>
+                            </div>
+                            
 
 
+                            <section class="contact-directory-section">
+        <div class="section-header">
+            <h2> Direct Contact us</h2>
+           
+        </div>
+
+        <div class="section-content">
+            <div class="main-helpline">
+                <h3>Customer  Care Helpline</h3>
+                <div class="number">9838075493</div>
+            </div>
+
+            <div class="columns-container">
+                <!-- Department Contacts Column -->
+                <div class="department-column">
+                    <h3 class="column-title">Department Contacts</h3>
+                    <div class="departments-grid">
+                        <div class="dept-card software-dev">
+                            <div class="dept-title">Software Development</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                    
+                                    <span class="contact-value">9838075495</span>
+                                  
+                                   
+                                </div>
+                                <div class="contact-row">
+                                    
+                                  
+                                    <span class="contact-value">9838075416</span>
+                                   
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="dept-card creative-prod">
+                            <div class="dept-title">Creative Production</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                
+                                    <span class="contact-value">9838075496</span>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="dept-card digital-marketing">
+                            <div class="dept-title">Digital Marketing</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                 
+                                    <span class="contact-value">9838077172</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dept-card sales">
+                            <div class="dept-title">Sales Department</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                   <span class="contact-value">9838077184</span>
+                                 
+                                </div>
+                                 <div class="contact-row">
+                                   
+                                  <span class="contact-value">9838077109</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Administration Column -->
+                <div class="admin-column">
+                    <h3 class="column-title">Administration</h3>
+                    <div class="admin-grid">
+                        <div class="dept-card hr-admin">
+                            <div class="dept-title">HR & Administration</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                
+                                    <span class="contact-value">9838077172</span>
+                                </div>
+                              
+                            </div>
+                        </div>
+
+                        <div class="dept-card management">
+                            <div class="dept-title">Management</div>
+                            <div class="contact-details">
+                                <div class="contact-row">
+                                   
+                                    <span class="contact-value">9838075490</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+                        </div>
+
+                    </div>  
                 </div>
             </div>
 
             <!-- /form -->
 
             <!-- map -->
-            <div class="mt-5">
+            <div class="tf-spacing-1">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28476.327830104627!2d80.96280523448254!3d26.854548357608866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd10cfd0bb2f%3A0x36a1e3803e493540!2sAuctech%20Marketing%20Communication%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1751021883849!5m2!1sen!2sin"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -583,171 +783,46 @@
     <!-- /Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-$(document).ready(function () {
-    $('#enquiryForm').submit(function (e) {
-        e.preventDefault();
+        document.getElementById('enquiryForm').addEventListener('submit', function (e) {
+            e.preventDefault();
 
-        var form = this;
-        var submitBtn = $(form).find("button[type=submit]");
-
-        // Disable button on submit
-        submitBtn.prop("disabled", true)
-            .text("Submitting...")
-            .css({
-                "cursor": "not-allowed",
-                "opacity": "0.7"
-            });
-
-        var phone = $('[name="phone"]').val();
-        var cvFile = $('[name="image_path"]')[0].files[0];
-
-        // Phone validation
-        if (!/^[0-9]{10}$/.test(phone)) {
-            Swal.fire('Invalid Phone', 'Enter a valid 10 digit phone number', 'warning');
-            resetBtn();
-            return;
-        }
-
-        // File validation (CV or Image)
-        if (!cvFile) {
-            Swal.fire('File Required', 'Please upload your CV or Image', 'warning');
-            resetBtn();
-            return;
-        }
-
-        var allowedTypes = [
-            'application/pdf',
-            'application/msword',
-            'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-            'image/png',
-            'image/jpeg',
-            'image/jpg',
-            'image/webp'
-        ];
-
-        if ($.inArray(cvFile.type, allowedTypes) === -1) {
-            Swal.fire('Invalid File', 'Allowed formats: PDF, DOC, DOCX, PNG, JPG, JPEG, WEBP', 'warning');
-            resetBtn();
-            return;
-        }
-
-        if (cvFile.size > 3 * 1024 * 1024) {
-            Swal.fire('File Too Large', 'File must be less than 3MB', 'warning');
-            resetBtn();
-            return;
-        }
-        
-          // Check reCAPTCHA response (v2 checkbox)
-            var recaptchaResponse = grecaptcha.getResponse();
-            if (recaptchaResponse.length === 0) {
+            var phone = document.getElementById('phone').value;
+            if (!/^\d{10}$/.test(phone)) {
                 Swal.fire({
-                    title: 'CAPTCHA Required',
-                    html: '<p style="font-size:16px;">Please complete the "I\'m not a robot" checkbox.</p>',
+                    title: 'Invalid Phone!',
+                    html: '<p style="font-size:16px;">Phone number must be exactly 10 digits.</p>',
                     icon: 'warning',
                     confirmButtonText: 'OK'
                 });
                 return;
             }
-        
-            var form = this;
-            var formData = new FormData(form);
-        
-            // ensure the g-recaptcha-response is sent (include explicitly)
-            formData.append('g-recaptcha-response', recaptchaResponse);
-        
-            fetch(form.action, {
+
+            var formData = new FormData(this);
+
+            fetch('save_contact.php', {
                 method: 'POST',
-                body: formData,
-                credentials: 'same-origin'
+                body: formData
             })
-            .then(response => response.text())
-            .then(result => {
-                // Expecting 'success' or some error text from PHP
-                if (result.trim().indexOf('success') !== -1) {
+                .then(response => response.text())
+                .then(result => {
                     Swal.fire({
                         title: 'Thank You!',
-                        html: '<p style="font-size:16px; color:#333;">Your application has been successfully submitted. We will connect with you soon!.</p>',
+                       html: '<p style="font-size:16px; color:#333;">Thank you for reaching out to <b>Auctech Marcom</b>.<br>Our team has received your query and will get back to you shortly.</p>',
                         icon: 'success',
                         confirmButtonText: 'OK'
-                    }).then(() => {
-                        // reset captcha and reload or clear form as needed
-                        grecaptcha.reset();
-                        location.reload();
-                    });
-                } else {
+                    }).then(() => location.reload());
+                })
+                .catch(error => {
                     Swal.fire({
                         title: 'Error!',
-                        html: '<p style="font-size:14px;">' + (result || 'Something went wrong.') + '</p>',
+                        text: 'Something went wrong.',
                         icon: 'error',
                         confirmButtonText: 'OK'
                     });
-                }
-            })
-            .catch(error => {
-                Swal.fire({
-                    title: 'Error!',
-                    text: 'Something went wrong. ' + error,
-                    icon: 'error',
-                    confirmButtonText: 'OK'
                 });
-            });
-
-        var formData = new FormData(this);
-
-        // AJAX submission
-        $.ajax({
-            url: 'admin/save_job.php',
-            type: 'POST',
-            data: formData,
-            processData: false,
-            contentType: false,
-            success: function (response) {
-                console.log("PHP Response:", response);
-                response = response.trim();
-                if (response == 'success') {
-                    Swal.fire({
-                        title: 'Thank You!',
-                        text: 'Your application has been successfully submitted. We will connect with you soon!',
-                        icon: 'success',
-                        customClass: {
-                            title: 'swal-title',
-                            htmlContainer: 'swal-text'
-                        }
-                    }).then(() => {
-                        $('#enquiryForm')[0].reset();
-                    });
-                } else {
-                    Swal.fire('Error', response, 'error');
-                }
-            },
-            error: function (xhr, status, error) {
-                console.error("AJAX Error:", status, error);
-                console.error("Response Text:", xhr.responseText);
-                Swal.fire('Error', 'Something went wrong. Check console for details.', 'error');
-            },
-            complete: function () {
-                // Re-enable button after request completes
-                resetBtn();
-            }
         });
-        
-        
 
-        // Function to reset button
-        function resetBtn() {
-            submitBtn.prop("disabled", false)
-                .text("Submit")
-                .css({
-                    "cursor": "pointer",
-                    "opacity": "1"
-                });
-        }
-    });
-});
-</script>
-
-
-
+    </script>
 </body>
 
 </html>
