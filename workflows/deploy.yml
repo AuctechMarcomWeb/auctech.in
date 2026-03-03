@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Deploy to IIS
+      - name: Deploy
         run: |
           cd C:\inetpub\wwwroot\prod.auctech.in
           powershell -Command "Stop-WebAppPool -Name 'prod.auctech.in'"
