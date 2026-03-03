@@ -1,9 +1,0 @@
-<FilesMatch "\.(php|php5|phtml|pl|py|js|sh|exe)$">
-    Deny from all
-</FilesMatch>
-
-# Disable CGI execution
-Options -ExecCGI
-
-# Directory listing disable
-Options -Indexes
