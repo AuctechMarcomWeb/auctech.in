@@ -16,6 +16,4 @@ jobs:
       - name: Deploy files
         run: |
           echo "Deploying website..."
-          takeown /f C:\inetpub\wwwroot\ /r /d y
-          icacls C:\inetpub\wwwroot\ /grant Everyone:F /t
           xcopy /E /I /Y . C:\inetpub\wwwroot\
